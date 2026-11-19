@@ -1,0 +1,395 @@
+{
+  "first_sentence_metrics": {
+    "avg_words": 24.2,
+    "min_words": 6,
+    "max_words": 236,
+    "avg_duration_sec": 6.65,
+    "sample_hooks": [
+      "If you plant a tree beside an empty road, cars will steer right into it.",
+      "He loaded the shotgun with gold and fired it into the walls of the mine.",
+      "He drilled 82 holes into the wood because down the hill an army is marching straight for his fort and while everyone else sharp and swords He's in the corner still drilling his commander asks are we fighting them or grading cheese But it gets weirder He bolts the wood onto a cart and into every hole goes something long and thin wrapped in paper each with a string Then he twists all the strings into one rope nobody's allowed to touch one soldier reaches for it And he slaps his hand so hard the whole fort hears it that night It pours so he throws his coat over the cart and lies on top of it like a human umbrella one drop gets in there and we're all dead The next morning ladder slam against the walls and the army charges everyone screams at him to do something But he just watches them get closer and closer until their pack shoulder to shoulder close enough to see their teeth That's when he rips off the coat and lights the rope the spark races down it and splits into 82 tiny flames and each one hits a tube of gunpowder strapped to an arrow turning every one of them into a rocket All 82 blast off the cart at once flying every which way but with the army packed that tight not a single one misses",
+      "He slammed the brakes on the highway and the car behind him smashes right into his bumper.",
+      "He bent the roller coaster's loop out of shape.",
+      "They painted the jail cell pink and not just any pink.",
+      "He saw it gaps into a railroad every 39 feet.",
+      "He poured cooking oil into the sea."
+    ]
+  },
+  "pivot_metrics": {
+    "avg_pivot_position_pct": 48.6,
+    "avg_pivot_timestamp_sec": 29.9,
+    "pivots": [
+      {
+        "video": "01_The_Instinct_That_Makes_You_Crash_aD73kaL_PtY.mp4",
+        "pivot": {
+          "marker": "eventually",
+          "sentence": "Eventually, the sheriff drives out to see what's going on.",
+          "position_pct": 39.9,
+          "estimated_timestamp_sec": 23.6
+        }
+      },
+      {
+        "video": "02_How_Mine_Salting_Worked_TRUkQ1wbV2E.mp4",
+        "pivot": {
+          "marker": "but",
+          "sentence": "But he's brought an expert, and the expert isn't stupid.",
+          "position_pct": 41.1,
+          "estimated_timestamp_sec": 25.1
+        }
+      },
+      {
+        "video": "03_How_One_Cart_Stopped_an_Entire_Army_i4hYq1oSXTg.mp4",
+        "pivot": {
+          "marker": "that's when",
+          "sentence": "He drilled 82 holes into the wood because down the hill an army is marching straight for his fort and while everyone else sharp and swords He's in the corner still drilling his commander asks are we fighting them or grading cheese But it gets weirder He bolts the wood onto a cart and into every hole goes something long and thin wrapped in paper each with a string Then he twists all the strings into one rope nobody's allowed to touch one soldier reaches for it And he slaps his hand so hard the whole fort hears it that night It pours so he throws his coat over the cart and lies on top of it like a human umbrella one drop gets in there and we're all dead The next morning ladder slam against the walls and the army charges everyone screams at him to do something But he just watches them get closer and closer until their pack shoulder to shoulder close enough to see their teeth That's when he rips off the coat and lights the rope the spark races down it and splits into 82 tiny flames and each one hits a tube of gunpowder strapped to an arrow turning every one of them into a rocket All 82 blast off the cart at once flying every which way but with the army packed that tight not a single one misses",
+          "position_pct": 50.0,
+          "estimated_timestamp_sec": 33.2
+        }
+      },
+      {
+        "video": "04_Why_Drivers_Started_Filming_The_Road_e9NoHjAXYIY.mp4",
+        "pivot": {
+          "marker": "then",
+          "sentence": "Then he brings a buddy who drives right beside you so you can't swerve.",
+          "position_pct": 42.0,
+          "estimated_timestamp_sec": 26.1
+        }
+      },
+      {
+        "video": "05_This_Shape_Saved_Roller_Coasters_QlDPMzGmYac.mp4",
+        "pivot": {
+          "marker": "until",
+          "sentence": "His rival laughs, then sneaks in and cranks the sides together until the loop is tall and skinny, so the first cart will snap like a twig.",
+          "position_pct": 38.6,
+          "estimated_timestamp_sec": 24.3
+        }
+      },
+      {
+        "video": "06_The_Pink_Prison_Cell_Experiment_HxqtHI62otM.mp4",
+        "pivot": {
+          "marker": "but",
+          "sentence": "But when they pull him out 15 minutes later, the scientist asks the skittiest guard there to arm wrestle him and the guard slams his hand down in two seconds.",
+          "position_pct": 47.9,
+          "estimated_timestamp_sec": 31.2
+        }
+      },
+      {
+        "video": "07_Why_Perfect_Railroads_Dont_Work_7xS87iActkU.mp4",
+        "pivot": {
+          "marker": "then",
+          "sentence": "Then summer comes and something weird happens.",
+          "position_pct": 56.5,
+          "estimated_timestamp_sec": 36.7
+        }
+      },
+      {
+        "video": "08_Why_Sailors_Carried_Storm_Oil_Mz72MuPgnGY.mp4",
+        "pivot": {
+          "marker": "but",
+          "sentence": "Deeper in, the waves get taller than the mast and the crew is tying themselves to anything bolted down, but he's still pouring.",
+          "position_pct": 47.8,
+          "estimated_timestamp_sec": 30.8
+        }
+      },
+      {
+        "video": "09_How_a_Mirror_Rigged_a_Horse_Race_5WMQhPObNqQ.mp4",
+        "pivot": {
+          "marker": "then",
+          "sentence": "Then the hill flashes, and he puts every dollar he has on horse nine.",
+          "position_pct": 57.8,
+          "estimated_timestamp_sec": 36.9
+        }
+      },
+      {
+        "video": "10_The_Town_Built_Around_a_Button_ZDy3xXA2iHk.mp4",
+        "pivot": {
+          "marker": "but",
+          "sentence": "But nothing happens.",
+          "position_pct": 63.1,
+          "estimated_timestamp_sec": 41.2
+        }
+      },
+      {
+        "video": "11_Why_the_Second_Draw_Always_Wins_LC8hYwUZ-kU.mp4",
+        "pivot": {
+          "marker": "but",
+          "sentence": "But men ride in from three states away to duel him and every one of them goes down the exact same way.",
+          "position_pct": 50.0,
+          "estimated_timestamp_sec": 28.0
+        }
+      },
+      {
+        "video": "12_Every_Memory_Has_a_Price_t3OXkhlI6NQ.mp4",
+        "pivot": {
+          "marker": "but",
+          "sentence": "But that same week, his little brother gets sick.",
+          "position_pct": 44.2,
+          "estimated_timestamp_sec": 34.4
+        }
+      },
+      {
+        "video": "13_He_Could_Spot_Winning_Tickets_Just_by_Looking_DEe0iKH4KIw.mp4",
+        "pivot": {
+          "marker": "until",
+          "sentence": "Spreads them across his apartment floor and stares until something jumps out.",
+          "position_pct": 46.3,
+          "estimated_timestamp_sec": 29.1
+        }
+      },
+      {
+        "video": "14_What_the_Grave_Bell_Really_Meant_GM9UKnZ6JFw.mp4",
+        "pivot": {
+          "marker": "but",
+          "sentence": "But his wife isn't on her porch.",
+          "position_pct": 48.0,
+          "estimated_timestamp_sec": 28.4
+        }
+      },
+      {
+        "video": "15_Why_Cashiers_Keep_Winning_The_Lottery_VKsamN3Fk4U.mp4",
+        "pivot": {
+          "marker": "until",
+          "sentence": "So he waits, five minutes go by, then 10, until finally a door opens behind him.",
+          "position_pct": 62.5,
+          "estimated_timestamp_sec": 35.9
+        }
+      },
+      {
+        "video": "16_The_Job_Nobody_Wants_in_Japan_0m6G8pDtzNs.mp4",
+        "pivot": {
+          "marker": "then",
+          "sentence": "Then your co-workers start staring when you walk past.",
+          "position_pct": 35.9,
+          "estimated_timestamp_sec": 21.6
+        }
+      },
+      {
+        "video": "17_The_Burglar_Who_Only_Moved_Furniture_nzbkkEZFM8g.mp4",
+        "pivot": {
+          "marker": "until",
+          "sentence": "They start locking every door in window at night, but every morning, everything has still crept a little further, until the bed is pressed up against the wall.",
+          "position_pct": 43.3,
+          "estimated_timestamp_sec": 25.2
+        }
+      },
+      {
+        "video": "18_The_Ancient_Jar_That_Warned_an_Empire_VS1Z_Q-Klt8.mp4",
+        "pivot": {
+          "marker": "then",
+          "sentence": "Then one night a ball dropped.",
+          "position_pct": 52.6,
+          "estimated_timestamp_sec": 34.1
+        }
+      },
+      {
+        "video": "19_Levels_of_Pirate_Cannonballs_lnYLIWP2l-I.mp4",
+        "pivot": {
+          "marker": "until",
+          "sentence": "They shoveled cannonballs into a furnace until they glowed red, carried them over with giant tongs, and dropped them in behind a soaking wet plug so the gunpowder wouldn't go off early.",
+          "position_pct": 40.5,
+          "estimated_timestamp_sec": 25.6
+        }
+      },
+      {
+        "video": "20_This_Knight_Found_the_Ultimate_Loophole_jpFJ8Z_F-qU.mp4",
+        "pivot": {
+          "marker": "structural transition",
+          "sentence": "With the chest so full, it took two men to carry it.",
+          "position_pct": 65.0,
+          "estimated_timestamp_sec": 26.4
+        }
+      }
+    ]
+  },
+  "ending_metrics": {
+    "avg_words": 27.9,
+    "sample_endings": [
+      {
+        "video": "01_The_Instinct_That_Makes_You_Crash_aD73kaL_PtY.mp4",
+        "ending": "And while they stare, their hands slowly turn the wheel toward it, even when it's just a stump.",
+        "words": 18
+      },
+      {
+        "video": "02_How_Mine_Salting_Worked_TRUkQ1wbV2E.mp4",
+        "ending": "10 feet past where the last guy gave up.",
+        "words": 9
+      },
+      {
+        "video": "03_How_One_Cart_Stopped_an_Entire_Army_i4hYq1oSXTg.mp4",
+        "ending": "He drilled 82 holes into the wood because down the hill an army is marching straight for his fort and while everyone else sharp and swords He's in the corner still drilling his commander asks are we fighting them or grading cheese But it gets weirder He bolts the wood onto a cart and into every hole goes something long and thin wrapped in paper each with a string Then he twists all the strings into one rope nobody's allowed to touch one soldier reaches for it And he slaps his hand so hard the whole fort hears it that night It pours so he throws his coat over the cart and lies on top of it like a human umbrella one drop gets in there and we're all dead The next morning ladder slam against the walls and the army charges everyone screams at him to do something But he just watches them get closer and closer until their pack shoulder to shoulder close enough to see their teeth That's when he rips off the coat and lights the rope the spark races down it and splits into 82 tiny flames and each one hits a tube of gunpowder strapped to an arrow turning every one of them into a rocket All 82 blast off the cart at once flying every which way but with the army packed that tight not a single one misses",
+        "words": 236
+      },
+      {
+        "video": "04_Why_Drivers_Started_Filming_The_Road_e9NoHjAXYIY.mp4",
+        "ending": "And that's how the dash cam was invented.",
+        "words": 8
+      },
+      {
+        "video": "05_This_Shape_Saved_Roller_Coasters_QlDPMzGmYac.mp4",
+        "ending": "Just as the rival's cart hits the bottom of that perfect circle.",
+        "words": 12
+      },
+      {
+        "video": "06_The_Pink_Prison_Cell_Experiment_HxqtHI62otM.mp4",
+        "ending": "Leave someone in any longer and it does the exact opposite.",
+        "words": 11
+      },
+      {
+        "video": "07_Why_Perfect_Railroads_Dont_Work_7xS87iActkU.mp4",
+        "ending": "Rail touching rail and halfway across the canyon the perfect railroad kicks sideways like a snake right as a train rolls onto it.",
+        "words": 23
+      },
+      {
+        "video": "08_Why_Sailors_Carried_Storm_Oil_Mz72MuPgnGY.mp4",
+        "ending": "In 50 yards behind, it curls over and drops straight onto the pirate's deck.",
+        "words": 14
+      }
+    ]
+  },
+  "repeated_phrases": {
+    "top_trigrams": [
+      [
+        "the next morning",
+        6
+      ],
+      [
+        "out of the",
+        4
+      ],
+      [
+        "you see the",
+        3
+      ],
+      [
+        "the tow truck",
+        3
+      ],
+      [
+        "next morning the",
+        3
+      ],
+      [
+        "the rich guy",
+        3
+      ],
+      [
+        "up in a",
+        3
+      ],
+      [
+        "the guy in",
+        3
+      ],
+      [
+        "guy in the",
+        3
+      ],
+      [
+        "and by the",
+        3
+      ],
+      [
+        "under the glass",
+        3
+      ],
+      [
+        "by the end",
+        3
+      ],
+      [
+        "the end of",
+        3
+      ],
+      [
+        "end of the",
+        3
+      ],
+      [
+        "an empty road",
+        2
+      ],
+      [
+        "right into it",
+        2
+      ],
+      [
+        "a giant flashing",
+        2
+      ],
+      [
+        "giant flashing arrow",
+        2
+      ],
+      [
+        "tow truck guy",
+        2
+      ],
+      [
+        "in his life",
+        2
+      ]
+    ],
+    "top_fourgrams": [
+      [
+        "the guy in the",
+        3
+      ],
+      [
+        "by the end of",
+        3
+      ],
+      [
+        "the end of the",
+        3
+      ],
+      [
+        "a giant flashing arrow",
+        2
+      ],
+      [
+        "the tow truck guy",
+        2
+      ],
+      [
+        "every one of them",
+        2
+      ],
+      [
+        "he just points at",
+        2
+      ],
+      [
+        "the next morning the",
+        2
+      ],
+      [
+        "and by the time",
+        2
+      ],
+      [
+        "up on that hill",
+        2
+      ],
+      [
+        "the guy behind the",
+        2
+      ],
+      [
+        "guy behind the counter",
+        2
+      ],
+      [
+        "a race to the",
+        2
+      ],
+      [
+        "the whole town is",
+        2
+      ],
+      [
+        "in the morning the",
+        2
+      ]
+    ]
+  }
+}

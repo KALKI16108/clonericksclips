@@ -1,0 +1,226 @@
+{
+  "channel": "@RicksClips3000",
+  "count": 20,
+  "shorts": [
+    {
+      "index": 1,
+      "videoId": "aD73kaL_PtY",
+      "title": "The Instinct That Makes You Crash",
+      "views": "1.4M views",
+      "viewsNumeric": 1400000,
+      "url": "https://www.youtube.com/shorts/aD73kaL_PtY",
+      "thumbnail": "/api/short-thumb/aD73kaL_PtY?type=oar2",
+      "fallbackThumbnail": "/api/short-thumb/aD73kaL_PtY?type=hq",
+      "filename": "01_The_Instinct_That_Makes_You_Crash_aD73kaL_PtY.mp4"
+    },
+    {
+      "index": 2,
+      "videoId": "TRUkQ1wbV2E",
+      "title": "How Mine Salting Worked",
+      "views": "3.9M views",
+      "viewsNumeric": 3900000,
+      "url": "https://www.youtube.com/shorts/TRUkQ1wbV2E",
+      "thumbnail": "/api/short-thumb/TRUkQ1wbV2E?type=oar2",
+      "fallbackThumbnail": "/api/short-thumb/TRUkQ1wbV2E?type=hq",
+      "filename": "02_How_Mine_Salting_Worked_TRUkQ1wbV2E.mp4"
+    },
+    {
+      "index": 3,
+      "videoId": "i4hYq1oSXTg",
+      "title": "How One Cart Stopped an Entire Army",
+      "views": "8M views",
+      "viewsNumeric": 8000000,
+      "url": "https://www.youtube.com/shorts/i4hYq1oSXTg",
+      "thumbnail": "/api/short-thumb/i4hYq1oSXTg?type=oar2",
+      "fallbackThumbnail": "/api/short-thumb/i4hYq1oSXTg?type=hq",
+      "filename": "03_How_One_Cart_Stopped_an_Entire_Army_i4hYq1oSXTg.mp4"
+    },
+    {
+      "index": 4,
+      "videoId": "e9NoHjAXYIY",
+      "title": "Why Drivers Started Filming The Road",
+      "views": "4.5M views",
+      "viewsNumeric": 4500000,
+      "url": "https://www.youtube.com/shorts/e9NoHjAXYIY",
+      "thumbnail": "/api/short-thumb/e9NoHjAXYIY?type=oar2",
+      "fallbackThumbnail": "/api/short-thumb/e9NoHjAXYIY?type=hq",
+      "filename": "04_Why_Drivers_Started_Filming_The_Road_e9NoHjAXYIY.mp4"
+    },
+    {
+      "index": 5,
+      "videoId": "QlDPMzGmYac",
+      "title": "This Shape Saved Roller Coasters",
+      "views": "11M views",
+      "viewsNumeric": 11000000,
+      "url": "https://www.youtube.com/shorts/QlDPMzGmYac",
+      "thumbnail": "/api/short-thumb/QlDPMzGmYac?type=oar2",
+      "fallbackThumbnail": "/api/short-thumb/QlDPMzGmYac?type=hq",
+      "filename": "05_This_Shape_Saved_Roller_Coasters_QlDPMzGmYac.mp4"
+    },
+    {
+      "index": 6,
+      "videoId": "HxqtHI62otM",
+      "title": "The Pink Prison Cell Experiment",
+      "views": "10M views",
+      "viewsNumeric": 10000000,
+      "url": "https://www.youtube.com/shorts/HxqtHI62otM",
+      "thumbnail": "/api/short-thumb/HxqtHI62otM?type=oar2",
+      "fallbackThumbnail": "/api/short-thumb/HxqtHI62otM?type=hq",
+      "filename": "06_The_Pink_Prison_Cell_Experiment_HxqtHI62otM.mp4"
+    },
+    {
+      "index": 7,
+      "videoId": "7xS87iActkU",
+      "title": "Why Perfect Railroads Don't Work",
+      "views": "29M views",
+      "viewsNumeric": 29000000,
+      "url": "https://www.youtube.com/shorts/7xS87iActkU",
+      "thumbnail": "/api/short-thumb/7xS87iActkU?type=oar2",
+      "fallbackThumbnail": "/api/short-thumb/7xS87iActkU?type=hq",
+      "filename": "07_Why_Perfect_Railroads_Dont_Work_7xS87iActkU.mp4"
+    },
+    {
+      "index": 8,
+      "videoId": "Mz72MuPgnGY",
+      "title": "Why Sailors Carried Storm Oil",
+      "views": "16M views",
+      "viewsNumeric": 16000000,
+      "url": "https://www.youtube.com/shorts/Mz72MuPgnGY",
+      "thumbnail": "/api/short-thumb/Mz72MuPgnGY?type=oar2",
+      "fallbackThumbnail": "/api/short-thumb/Mz72MuPgnGY?type=hq",
+      "filename": "08_Why_Sailors_Carried_Storm_Oil_Mz72MuPgnGY.mp4"
+    },
+    {
+      "index": 9,
+      "videoId": "5WMQhPObNqQ",
+      "title": "How a Mirror Rigged a Horse Race",
+      "views": "5.6M views",
+      "viewsNumeric": 5600000,
+      "url": "https://www.youtube.com/shorts/5WMQhPObNqQ",
+      "thumbnail": "/api/short-thumb/5WMQhPObNqQ?type=oar2",
+      "fallbackThumbnail": "/api/short-thumb/5WMQhPObNqQ?type=hq",
+      "filename": "09_How_a_Mirror_Rigged_a_Horse_Race_5WMQhPObNqQ.mp4"
+    },
+    {
+      "index": 10,
+      "videoId": "ZDy3xXA2iHk",
+      "title": "The Town Built Around a Button",
+      "views": "3.8M views",
+      "viewsNumeric": 3800000,
+      "url": "https://www.youtube.com/shorts/ZDy3xXA2iHk",
+      "thumbnail": "/api/short-thumb/ZDy3xXA2iHk?type=oar2",
+      "fallbackThumbnail": "/api/short-thumb/ZDy3xXA2iHk?type=hq",
+      "filename": "10_The_Town_Built_Around_a_Button_ZDy3xXA2iHk.mp4"
+    },
+    {
+      "index": 11,
+      "videoId": "LC8hYwUZ-kU",
+      "title": "Why the Second Draw Always Wins",
+      "views": "9.7M views",
+      "viewsNumeric": 9700000,
+      "url": "https://www.youtube.com/shorts/LC8hYwUZ-kU",
+      "thumbnail": "/api/short-thumb/LC8hYwUZ-kU?type=oar2",
+      "fallbackThumbnail": "/api/short-thumb/LC8hYwUZ-kU?type=hq",
+      "filename": "11_Why_the_Second_Draw_Always_Wins_LC8hYwUZ-kU.mp4"
+    },
+    {
+      "index": 12,
+      "videoId": "t3OXkhlI6NQ",
+      "title": "Every Memory Has a Price",
+      "views": "555K views",
+      "viewsNumeric": 555000,
+      "url": "https://www.youtube.com/shorts/t3OXkhlI6NQ",
+      "thumbnail": "/api/short-thumb/t3OXkhlI6NQ?type=oar2",
+      "fallbackThumbnail": "/api/short-thumb/t3OXkhlI6NQ?type=hq",
+      "filename": "12_Every_Memory_Has_a_Price_t3OXkhlI6NQ.mp4"
+    },
+    {
+      "index": 13,
+      "videoId": "DEe0iKH4KIw",
+      "title": "He Could Spot Winning Tickets Just by Looking",
+      "views": "6.5M views",
+      "viewsNumeric": 6500000,
+      "url": "https://www.youtube.com/shorts/DEe0iKH4KIw",
+      "thumbnail": "/api/short-thumb/DEe0iKH4KIw?type=oar2",
+      "fallbackThumbnail": "/api/short-thumb/DEe0iKH4KIw?type=hq",
+      "filename": "13_He_Could_Spot_Winning_Tickets_Just_by_Looking_DEe0iKH4KIw.mp4"
+    },
+    {
+      "index": 14,
+      "videoId": "GM9UKnZ6JFw",
+      "title": "What the Grave Bell Really Meant",
+      "views": "13M views",
+      "viewsNumeric": 13000000,
+      "url": "https://www.youtube.com/shorts/GM9UKnZ6JFw",
+      "thumbnail": "/api/short-thumb/GM9UKnZ6JFw?type=oar2",
+      "fallbackThumbnail": "/api/short-thumb/GM9UKnZ6JFw?type=hq",
+      "filename": "14_What_the_Grave_Bell_Really_Meant_GM9UKnZ6JFw.mp4"
+    },
+    {
+      "index": 15,
+      "videoId": "VKsamN3Fk4U",
+      "title": "Why Cashiers Keep Winning The Lottery",
+      "views": "9.5M views",
+      "viewsNumeric": 9500000,
+      "url": "https://www.youtube.com/shorts/VKsamN3Fk4U",
+      "thumbnail": "/api/short-thumb/VKsamN3Fk4U?type=oar2",
+      "fallbackThumbnail": "/api/short-thumb/VKsamN3Fk4U?type=hq",
+      "filename": "15_Why_Cashiers_Keep_Winning_The_Lottery_VKsamN3Fk4U.mp4"
+    },
+    {
+      "index": 16,
+      "videoId": "0m6G8pDtzNs",
+      "title": "The Job Nobody Wants in Japan",
+      "views": "18M views",
+      "viewsNumeric": 18000000,
+      "url": "https://www.youtube.com/shorts/0m6G8pDtzNs",
+      "thumbnail": "/api/short-thumb/0m6G8pDtzNs?type=oar2",
+      "fallbackThumbnail": "/api/short-thumb/0m6G8pDtzNs?type=hq",
+      "filename": "16_The_Job_Nobody_Wants_in_Japan_0m6G8pDtzNs.mp4"
+    },
+    {
+      "index": 17,
+      "videoId": "nzbkkEZFM8g",
+      "title": "The Burglar Who Only Moved Furniture",
+      "views": "9.8M views",
+      "viewsNumeric": 9800000,
+      "url": "https://www.youtube.com/shorts/nzbkkEZFM8g",
+      "thumbnail": "/api/short-thumb/nzbkkEZFM8g?type=oar2",
+      "fallbackThumbnail": "/api/short-thumb/nzbkkEZFM8g?type=hq",
+      "filename": "17_The_Burglar_Who_Only_Moved_Furniture_nzbkkEZFM8g.mp4"
+    },
+    {
+      "index": 18,
+      "videoId": "VS1Z_Q-Klt8",
+      "title": "The Ancient Jar That Warned an Empire",
+      "views": "34M views",
+      "viewsNumeric": 34000000,
+      "url": "https://www.youtube.com/shorts/VS1Z_Q-Klt8",
+      "thumbnail": "/api/short-thumb/VS1Z_Q-Klt8?type=oar2",
+      "fallbackThumbnail": "/api/short-thumb/VS1Z_Q-Klt8?type=hq",
+      "filename": "18_The_Ancient_Jar_That_Warned_an_Empire_VS1Z_Q-Klt8.mp4"
+    },
+    {
+      "index": 19,
+      "videoId": "lnYLIWP2l-I",
+      "title": "Levels of Pirate Cannonballs",
+      "views": "9.8M views",
+      "viewsNumeric": 9800000,
+      "url": "https://www.youtube.com/shorts/lnYLIWP2l-I",
+      "thumbnail": "/api/short-thumb/lnYLIWP2l-I?type=oar2",
+      "fallbackThumbnail": "/api/short-thumb/lnYLIWP2l-I?type=hq",
+      "filename": "19_Levels_of_Pirate_Cannonballs_lnYLIWP2l-I.mp4"
+    },
+    {
+      "index": 20,
+      "videoId": "jpFJ8Z_F-qU",
+      "title": "This Knight Found the Ultimate Loophole",
+      "views": "1.6M views",
+      "viewsNumeric": 1600000,
+      "url": "https://www.youtube.com/shorts/jpFJ8Z_F-qU",
+      "thumbnail": "/api/short-thumb/jpFJ8Z_F-qU?type=oar2",
+      "fallbackThumbnail": "/api/short-thumb/jpFJ8Z_F-qU?type=hq",
+      "filename": "20_This_Knight_Found_the_Ultimate_Loophole_jpFJ8Z_F-qU.mp4"
+    }
+  ]
+}

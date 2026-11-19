@@ -1,0 +1,74 @@
+[
+  {
+    "shot_number": 1,
+    "line": "A highway engineer packed a dead whale with half a ton of dynamite.",
+    "start_time": 0.0,
+    "end_time": 3.3,
+    "duration": 3.3,
+    "flag_shorter_than_1_5s": false
+  },
+  {
+    "shot_number": 2,
+    "line": "You see, in 1970, an eight-ton whale washed up rotting on an Oregon beach.",
+    "start_time": 4.08,
+    "end_time": 8.34,
+    "duration": 4.26,
+    "flag_shorter_than_1_5s": false
+  },
+  {
+    "shot_number": 3,
+    "line": "Nobody knew how to move it, so George figures if you blow it to bits, the seagulls will just eat whatever's left.",
+    "start_time": 8.34,
+    "end_time": 14.88,
+    "duration": 6.54,
+    "flag_shorter_than_1_5s": false
+  },
+  {
+    "shot_number": 4,
+    "line": "A military veteran in town begs him to stop, saying twenty cases of dynamite is completely insane.",
+    "start_time": 14.88,
+    "end_time": 20.74,
+    "duration": 5.86,
+    "flag_shorter_than_1_5s": false
+  },
+  {
+    "shot_number": 5,
+    "line": "George laughs, buries the dynamite anyway, and walks a quarter-mile down the road to push the plunger.",
+    "start_time": 20.74,
+    "end_time": 26.82,
+    "duration": 6.08,
+    "flag_shorter_than_1_5s": false
+  },
+  {
+    "shot_number": 6,
+    "line": "The explosion shakes the ground and launches a massive cloud of sand and blubber into the sky.",
+    "start_time": 26.82,
+    "end_time": 32.28,
+    "duration": 5.46,
+    "flag_shorter_than_1_5s": false
+  },
+  {
+    "shot_number": 7,
+    "line": "For three seconds, it's completely silent. Then, chunks of rotting blubber start raining from the clouds.",
+    "start_time": 32.28,
+    "end_time": 39.34,
+    "duration": 7.06,
+    "flag_shorter_than_1_5s": false
+  },
+  {
+    "shot_number": 8,
+    "line": "A slab the size of a coffee table drops straight down and flattens a brand-new car.",
+    "start_time": 39.34,
+    "end_time": 44.28,
+    "duration": 4.94,
+    "flag_shorter_than_1_5s": false
+  },
+  {
+    "shot_number": 9,
+    "line": "It belonged to the veteran, who'd just bought it on a sale called a whale of a deal.",
+    "start_time": 44.28,
+    "end_time": 49.1,
+    "duration": 4.82,
+    "flag_shorter_than_1_5s": false
+  }
+]

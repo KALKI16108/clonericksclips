@@ -1,0 +1,235 @@
+{
+  "metrics": {
+    "head_height_vs_figure_height": {
+      "mean": 0.32987500000000003,
+      "median": 0.28200000000000003,
+      "min": 0.2,
+      "max": 0.667,
+      "std": 0.12456528157957979,
+      "q25": 0.237,
+      "q75": 0.3895,
+      "outliers": [
+        0.667,
+        0.667,
+        0.667
+      ]
+    },
+    "head_width_vs_head_height": {
+      "mean": 1.1967,
+      "median": 1.25,
+      "min": 0.739,
+      "max": 1.399,
+      "std": 0.17206905590488955,
+      "q25": 1.106,
+      "q75": 1.328,
+      "outliers": [
+        0.739,
+        0.752
+      ]
+    },
+    "outline_ratio_vs_head_width": {
+      "mean": 0.0154,
+      "median": 0.015850000000000003,
+      "min": 0.0056,
+      "max": 0.029,
+      "std": 0.00516788157759057,
+      "q25": 0.011575,
+      "q75": 0.017775,
+      "outliers": [
+        0.029,
+        0.0278
+      ]
+    },
+    "limb_ratio_vs_head_width": {
+      "mean": 0.01732,
+      "median": 0.017849999999999998,
+      "min": 0.0063,
+      "max": 0.0326,
+      "std": 0.005817954967168446,
+      "q25": 0.012975,
+      "q75": 0.02,
+      "outliers": [
+        0.0326,
+        0.0312
+      ]
+    },
+    "vertical_fov_deg": {
+      "mean": 39.870000000000005,
+      "median": 39.8,
+      "min": 35.0,
+      "max": 51.2,
+      "std": 4.611084471141251,
+      "q25": 35.0,
+      "q75": 42.525,
+      "outliers": []
+    },
+    "fg_sharpness_lap": {
+      "mean": 1065.585,
+      "median": 972.15,
+      "min": 374.4,
+      "max": 1964.8,
+      "std": 458.34493372895486,
+      "q25": 663.975,
+      "q75": 1357.625,
+      "outliers": []
+    },
+    "bg_sharpness_lap": {
+      "mean": 571.4575,
+      "median": 374.6,
+      "min": 0.0,
+      "max": 2086.4,
+      "std": 501.7032055346568,
+      "q25": 162.45,
+      "q75": 810.075,
+      "outliers": [
+        2086.4
+      ]
+    },
+    "sharpness_ratio": {
+      "mean": 32.140499999999996,
+      "median": 2.255,
+      "min": 0.2,
+      "max": 1141.56,
+      "std": 177.69411250728032,
+      "q25": 1.475,
+      "q75": 4.85,
+      "outliers": [
+        16.5,
+        20.98,
+        1141.56
+      ]
+    },
+    "average_saturation": {
+      "mean": 40.92,
+      "median": 41.150000000000006,
+      "min": 13.1,
+      "max": 58.2,
+      "std": 10.439042101648981,
+      "q25": 35.099999999999994,
+      "q75": 47.275,
+      "outliers": [
+        13.1
+      ]
+    }
+  },
+  "outline_colors": [
+    [
+      "#4d3c34",
+      1
+    ],
+    [
+      "#474036",
+      1
+    ],
+    [
+      "#41271b",
+      1
+    ],
+    [
+      "#3e2c28",
+      1
+    ],
+    [
+      "#4c3d39",
+      1
+    ]
+  ],
+  "camera_heights": [
+    [
+      "Low Angle (looking up from chest/waist level)",
+      24
+    ],
+    [
+      "Eye Level (parallel / straight-on)",
+      10
+    ],
+    [
+      "High Angle (looking down from above eye level)",
+      6
+    ]
+  ],
+  "top_palette": [
+    [
+      "#7d7466",
+      1
+    ],
+    [
+      "#2d2d23",
+      1
+    ],
+    [
+      "#b4a893",
+      1
+    ],
+    [
+      "#eee1d7",
+      1
+    ],
+    [
+      "#5c4f3e",
+      1
+    ],
+    [
+      "#e5525b",
+      1
+    ]
+  ],
+  "outlier_frames": [
+    {
+      "sample_id": 13,
+      "filename": "sample_13_v07_f00456.jpg",
+      "reasons": [
+        "Head W/H ratio (0.74)"
+      ]
+    },
+    {
+      "sample_id": 23,
+      "filename": "sample_23_v12_f01776.jpg",
+      "reasons": [
+        "Head W/H ratio (0.75)"
+      ]
+    },
+    {
+      "sample_id": 25,
+      "filename": "sample_25_v13_f01731.jpg",
+      "reasons": [
+        "Head/Body ratio (0.67)"
+      ]
+    },
+    {
+      "sample_id": 29,
+      "filename": "sample_29_v15_f00411.jpg",
+      "reasons": [
+        "Sharpness ratio (16.50)"
+      ]
+    },
+    {
+      "sample_id": 30,
+      "filename": "sample_30_v15_f00861.jpg",
+      "reasons": [
+        "Head/Body ratio (0.67)"
+      ]
+    },
+    {
+      "sample_id": 31,
+      "filename": "sample_31_v16_f00306.jpg",
+      "reasons": [
+        "Sharpness ratio (20.98)"
+      ]
+    },
+    {
+      "sample_id": 32,
+      "filename": "sample_32_v16_f00696.jpg",
+      "reasons": [
+        "Sharpness ratio (1141.56)"
+      ]
+    },
+    {
+      "sample_id": 33,
+      "filename": "sample_33_v17_f00636.jpg",
+      "reasons": [
+        "Head/Body ratio (0.67)"
+      ]
+    }
+  ]
+}

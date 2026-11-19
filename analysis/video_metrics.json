@@ -1,0 +1,942 @@
+[
+  {
+    "index": 1,
+    "filename": "01_The_Instinct_That_Makes_You_Crash_aD73kaL_PtY.mp4",
+    "duration": 59.43,
+    "total_frames": 1783,
+    "contact_sheets_count": 30,
+    "camera_movement": {
+      "avg_movement_px_per_frame": 1.58,
+      "pct_frames_moving": 47.8
+    },
+    "cuts_and_shots": {
+      "hard_cuts_count": 6,
+      "shots_count": 7,
+      "avg_shot_length_seconds": 8.49
+    },
+    "color_metrics": {
+      "brightness_mean": 50.2,
+      "contrast_mean": 22.0,
+      "saturation_mean": 28.1
+    },
+    "outlines": {
+      "has_outlines_pct": 100.0,
+      "avg_thickness_px": 4.0,
+      "dominant_color_hex": "#787254"
+    },
+    "lighting_and_palette": {
+      "shadows": {
+        "act1": "#2a3026",
+        "act2": "#343331",
+        "act3": "#272226"
+      },
+      "highlights": {
+        "act1": "#cec4b4",
+        "act2": "#d5c9bf",
+        "act3": "#a59489"
+      }
+    },
+    "character_proportions": {
+      "head_to_body_ratio": "1:4.0",
+      "head_proportion_pct": 25.0,
+      "width_to_height_ratio": 0.83
+    },
+    "background_depth": {
+      "laplacian_variance": 618.5,
+      "depth_type": "Deep Focus (flat 2D)"
+    }
+  },
+  {
+    "index": 2,
+    "filename": "02_How_Mine_Salting_Worked_TRUkQ1wbV2E.mp4",
+    "duration": 61.07,
+    "total_frames": 1832,
+    "contact_sheets_count": 31,
+    "camera_movement": {
+      "avg_movement_px_per_frame": 2.64,
+      "pct_frames_moving": 61.2
+    },
+    "cuts_and_shots": {
+      "hard_cuts_count": 8,
+      "shots_count": 9,
+      "avg_shot_length_seconds": 6.79
+    },
+    "color_metrics": {
+      "brightness_mean": 49.7,
+      "contrast_mean": 21.3,
+      "saturation_mean": 52.9
+    },
+    "outlines": {
+      "has_outlines_pct": 99.5,
+      "avg_thickness_px": 4.0,
+      "dominant_color_hex": "#815b3e"
+    },
+    "lighting_and_palette": {
+      "shadows": {
+        "act1": "#301e19",
+        "act2": "#2f1d1a",
+        "act3": "#2d1813"
+      },
+      "highlights": {
+        "act1": "#d2ac7f",
+        "act2": "#d1b699",
+        "act3": "#d5b489"
+      }
+    },
+    "character_proportions": {
+      "head_to_body_ratio": "1:4.0",
+      "head_proportion_pct": 25.0,
+      "width_to_height_ratio": 0.68
+    },
+    "background_depth": {
+      "laplacian_variance": 1211.5,
+      "depth_type": "Deep Focus (flat 2D)"
+    }
+  },
+  {
+    "index": 3,
+    "filename": "03_How_One_Cart_Stopped_an_Entire_Army_i4hYq1oSXTg.mp4",
+    "duration": 66.83,
+    "total_frames": 2005,
+    "contact_sheets_count": 34,
+    "camera_movement": {
+      "avg_movement_px_per_frame": 2.35,
+      "pct_frames_moving": 64.4
+    },
+    "cuts_and_shots": {
+      "hard_cuts_count": 0,
+      "shots_count": 1,
+      "avg_shot_length_seconds": 66.83
+    },
+    "color_metrics": {
+      "brightness_mean": 54.0,
+      "contrast_mean": 20.5,
+      "saturation_mean": 38.7
+    },
+    "outlines": {
+      "has_outlines_pct": 100.0,
+      "avg_thickness_px": 4.0,
+      "dominant_color_hex": "#6b664b"
+    },
+    "lighting_and_palette": {
+      "shadows": {
+        "act1": "#2c2c25",
+        "act2": "#242324",
+        "act3": "#3f423a"
+      },
+      "highlights": {
+        "act1": "#aea79d",
+        "act2": "#b8a9ae",
+        "act3": "#e1d2b2"
+      }
+    },
+    "character_proportions": {
+      "head_to_body_ratio": "1:4.0",
+      "head_proportion_pct": 25.0,
+      "width_to_height_ratio": 0.74
+    },
+    "background_depth": {
+      "laplacian_variance": 810.9,
+      "depth_type": "Deep Focus (flat 2D)"
+    }
+  },
+  {
+    "index": 4,
+    "filename": "04_Why_Drivers_Started_Filming_The_Road_e9NoHjAXYIY.mp4",
+    "duration": 62.23,
+    "total_frames": 1867,
+    "contact_sheets_count": 32,
+    "camera_movement": {
+      "avg_movement_px_per_frame": 1.19,
+      "pct_frames_moving": 49.5
+    },
+    "cuts_and_shots": {
+      "hard_cuts_count": 7,
+      "shots_count": 8,
+      "avg_shot_length_seconds": 7.78
+    },
+    "color_metrics": {
+      "brightness_mean": 53.5,
+      "contrast_mean": 23.7,
+      "saturation_mean": 43.6
+    },
+    "outlines": {
+      "has_outlines_pct": 100.0,
+      "avg_thickness_px": 4.0,
+      "dominant_color_hex": "#696f6a"
+    },
+    "lighting_and_palette": {
+      "shadows": {
+        "act1": "#34393b",
+        "act2": "#1d1525",
+        "act3": "#15161d"
+      },
+      "highlights": {
+        "act1": "#adc3e8",
+        "act2": "#c0abb7",
+        "act3": "#a9bcc4"
+      }
+    },
+    "character_proportions": {
+      "head_to_body_ratio": "1:4.0",
+      "head_proportion_pct": 25.0,
+      "width_to_height_ratio": 0.89
+    },
+    "background_depth": {
+      "laplacian_variance": 800.5,
+      "depth_type": "Deep Focus (flat 2D)"
+    }
+  },
+  {
+    "index": 5,
+    "filename": "05_This_Shape_Saved_Roller_Coasters_QlDPMzGmYac.mp4",
+    "duration": 63.17,
+    "total_frames": 1895,
+    "contact_sheets_count": 32,
+    "camera_movement": {
+      "avg_movement_px_per_frame": 2.58,
+      "pct_frames_moving": 63.2
+    },
+    "cuts_and_shots": {
+      "hard_cuts_count": 2,
+      "shots_count": 3,
+      "avg_shot_length_seconds": 21.06
+    },
+    "color_metrics": {
+      "brightness_mean": 57.2,
+      "contrast_mean": 19.7,
+      "saturation_mean": 47.1
+    },
+    "outlines": {
+      "has_outlines_pct": 100.0,
+      "avg_thickness_px": 4.0,
+      "dominant_color_hex": "#5f6962"
+    },
+    "lighting_and_palette": {
+      "shadows": {
+        "act1": "#26282a",
+        "act2": "#292830",
+        "act3": "#3b4839"
+      },
+      "highlights": {
+        "act1": "#9ca7c3",
+        "act2": "#9f9aaa",
+        "act3": "#a6c1de"
+      }
+    },
+    "character_proportions": {
+      "head_to_body_ratio": "1:4.0",
+      "head_proportion_pct": 25.0,
+      "width_to_height_ratio": 0.76
+    },
+    "background_depth": {
+      "laplacian_variance": 787.2,
+      "depth_type": "Deep Focus (flat 2D)"
+    }
+  },
+  {
+    "index": 6,
+    "filename": "06_The_Pink_Prison_Cell_Experiment_HxqtHI62otM.mp4",
+    "duration": 65.23,
+    "total_frames": 1957,
+    "contact_sheets_count": 33,
+    "camera_movement": {
+      "avg_movement_px_per_frame": 1.47,
+      "pct_frames_moving": 55.3
+    },
+    "cuts_and_shots": {
+      "hard_cuts_count": 7,
+      "shots_count": 8,
+      "avg_shot_length_seconds": 8.15
+    },
+    "color_metrics": {
+      "brightness_mean": 66.2,
+      "contrast_mean": 19.8,
+      "saturation_mean": 38.0
+    },
+    "outlines": {
+      "has_outlines_pct": 99.6,
+      "avg_thickness_px": 4.0,
+      "dominant_color_hex": "#8a7a91"
+    },
+    "lighting_and_palette": {
+      "shadows": {
+        "act1": "#373d4d",
+        "act2": "#363e4c",
+        "act3": "#4f3a56"
+      },
+      "highlights": {
+        "act1": "#d2cbd3",
+        "act2": "#dbc9d1",
+        "act3": "#e6a0cc"
+      }
+    },
+    "character_proportions": {
+      "head_to_body_ratio": "1:4.0",
+      "head_proportion_pct": 25.0,
+      "width_to_height_ratio": 0.72
+    },
+    "background_depth": {
+      "laplacian_variance": 566.5,
+      "depth_type": "Deep Focus (flat 2D)"
+    }
+  },
+  {
+    "index": 7,
+    "filename": "07_Why_Perfect_Railroads_Dont_Work_7xS87iActkU.mp4",
+    "duration": 65.17,
+    "total_frames": 1955,
+    "contact_sheets_count": 33,
+    "camera_movement": {
+      "avg_movement_px_per_frame": 2.54,
+      "pct_frames_moving": 59.5
+    },
+    "cuts_and_shots": {
+      "hard_cuts_count": 1,
+      "shots_count": 2,
+      "avg_shot_length_seconds": 32.58
+    },
+    "color_metrics": {
+      "brightness_mean": 62.4,
+      "contrast_mean": 22.0,
+      "saturation_mean": 48.6
+    },
+    "outlines": {
+      "has_outlines_pct": 98.7,
+      "avg_thickness_px": 4.0,
+      "dominant_color_hex": "#8a5b5d"
+    },
+    "lighting_and_palette": {
+      "shadows": {
+        "act1": "#3c2540",
+        "act2": "#39212a",
+        "act3": "#442734"
+      },
+      "highlights": {
+        "act1": "#b5a8b9",
+        "act2": "#c6a7a0",
+        "act3": "#d9c1b7"
+      }
+    },
+    "character_proportions": {
+      "head_to_body_ratio": "1:4.0",
+      "head_proportion_pct": 25.0,
+      "width_to_height_ratio": 0.8
+    },
+    "background_depth": {
+      "laplacian_variance": 1163.6,
+      "depth_type": "Deep Focus (flat 2D)"
+    }
+  },
+  {
+    "index": 8,
+    "filename": "08_Why_Sailors_Carried_Storm_Oil_Mz72MuPgnGY.mp4",
+    "duration": 64.57,
+    "total_frames": 1937,
+    "contact_sheets_count": 33,
+    "camera_movement": {
+      "avg_movement_px_per_frame": 3.07,
+      "pct_frames_moving": 66.0
+    },
+    "cuts_and_shots": {
+      "hard_cuts_count": 5,
+      "shots_count": 6,
+      "avg_shot_length_seconds": 10.76
+    },
+    "color_metrics": {
+      "brightness_mean": 66.1,
+      "contrast_mean": 23.8,
+      "saturation_mean": 63.6
+    },
+    "outlines": {
+      "has_outlines_pct": 99.7,
+      "avg_thickness_px": 4.0,
+      "dominant_color_hex": "#7a6477"
+    },
+    "lighting_and_palette": {
+      "shadows": {
+        "act1": "#25151b",
+        "act2": "#1d1342",
+        "act3": "#372450"
+      },
+      "highlights": {
+        "act1": "#dae3e6",
+        "act2": "#9299d5",
+        "act3": "#a8adce"
+      }
+    },
+    "character_proportions": {
+      "head_to_body_ratio": "1:4.0",
+      "head_proportion_pct": 25.0,
+      "width_to_height_ratio": 0.68
+    },
+    "background_depth": {
+      "laplacian_variance": 1142.7,
+      "depth_type": "Deep Focus (flat 2D)"
+    }
+  },
+  {
+    "index": 9,
+    "filename": "09_How_a_Mirror_Rigged_a_Horse_Race_5WMQhPObNqQ.mp4",
+    "duration": 64.07,
+    "total_frames": 1922,
+    "contact_sheets_count": 33,
+    "camera_movement": {
+      "avg_movement_px_per_frame": 3.22,
+      "pct_frames_moving": 68.7
+    },
+    "cuts_and_shots": {
+      "hard_cuts_count": 9,
+      "shots_count": 10,
+      "avg_shot_length_seconds": 6.41
+    },
+    "color_metrics": {
+      "brightness_mean": 58.8,
+      "contrast_mean": 22.4,
+      "saturation_mean": 44.3
+    },
+    "outlines": {
+      "has_outlines_pct": 100.0,
+      "avg_thickness_px": 4.0,
+      "dominant_color_hex": "#847066"
+    },
+    "lighting_and_palette": {
+      "shadows": {
+        "act1": "#382c2e",
+        "act2": "#393330",
+        "act3": "#35292f"
+      },
+      "highlights": {
+        "act1": "#b4d0e8",
+        "act2": "#c9cbd2",
+        "act3": "#c7afb5"
+      }
+    },
+    "character_proportions": {
+      "head_to_body_ratio": "1:4.0",
+      "head_proportion_pct": 25.0,
+      "width_to_height_ratio": 0.71
+    },
+    "background_depth": {
+      "laplacian_variance": 1244.0,
+      "depth_type": "Deep Focus (flat 2D)"
+    }
+  },
+  {
+    "index": 10,
+    "filename": "10_The_Town_Built_Around_a_Button_ZDy3xXA2iHk.mp4",
+    "duration": 65.5,
+    "total_frames": 1965,
+    "contact_sheets_count": 33,
+    "camera_movement": {
+      "avg_movement_px_per_frame": 2.81,
+      "pct_frames_moving": 62.1
+    },
+    "cuts_and_shots": {
+      "hard_cuts_count": 2,
+      "shots_count": 3,
+      "avg_shot_length_seconds": 21.83
+    },
+    "color_metrics": {
+      "brightness_mean": 63.6,
+      "contrast_mean": 18.8,
+      "saturation_mean": 45.4
+    },
+    "outlines": {
+      "has_outlines_pct": 99.0,
+      "avg_thickness_px": 4.0,
+      "dominant_color_hex": "#787970"
+    },
+    "lighting_and_palette": {
+      "shadows": {
+        "act1": "#40415d",
+        "act2": "#30273c",
+        "act3": "#37392e"
+      },
+      "highlights": {
+        "act1": "#bab4c0",
+        "act2": "#ab9aae",
+        "act3": "#d8be91"
+      }
+    },
+    "character_proportions": {
+      "head_to_body_ratio": "1:4.0",
+      "head_proportion_pct": 25.0,
+      "width_to_height_ratio": 0.82
+    },
+    "background_depth": {
+      "laplacian_variance": 1105.9,
+      "depth_type": "Deep Focus (flat 2D)"
+    }
+  },
+  {
+    "index": 11,
+    "filename": "11_Why_the_Second_Draw_Always_Wins_LC8hYwUZ-kU.mp4",
+    "duration": 56.07,
+    "total_frames": 1682,
+    "contact_sheets_count": 29,
+    "camera_movement": {
+      "avg_movement_px_per_frame": 2.18,
+      "pct_frames_moving": 59.3
+    },
+    "cuts_and_shots": {
+      "hard_cuts_count": 1,
+      "shots_count": 2,
+      "avg_shot_length_seconds": 28.03
+    },
+    "color_metrics": {
+      "brightness_mean": 58.6,
+      "contrast_mean": 22.9,
+      "saturation_mean": 47.9
+    },
+    "outlines": {
+      "has_outlines_pct": 99.6,
+      "avg_thickness_px": 4.0,
+      "dominant_color_hex": "#715c61"
+    },
+    "lighting_and_palette": {
+      "shadows": {
+        "act1": "#4a3b49",
+        "act2": "#382636",
+        "act3": "#1d0f23"
+      },
+      "highlights": {
+        "act1": "#8eb9e1",
+        "act2": "#dfb48a",
+        "act3": "#c2a5a8"
+      }
+    },
+    "character_proportions": {
+      "head_to_body_ratio": "1:4.0",
+      "head_proportion_pct": 25.0,
+      "width_to_height_ratio": 0.69
+    },
+    "background_depth": {
+      "laplacian_variance": 511.4,
+      "depth_type": "Deep Focus (flat 2D)"
+    }
+  },
+  {
+    "index": 12,
+    "filename": "12_Every_Memory_Has_a_Price_t3OXkhlI6NQ.mp4",
+    "duration": 77.8,
+    "total_frames": 2334,
+    "contact_sheets_count": 39,
+    "camera_movement": {
+      "avg_movement_px_per_frame": 1.62,
+      "pct_frames_moving": 50.0
+    },
+    "cuts_and_shots": {
+      "hard_cuts_count": 0,
+      "shots_count": 1,
+      "avg_shot_length_seconds": 77.8
+    },
+    "color_metrics": {
+      "brightness_mean": 51.7,
+      "contrast_mean": 20.9,
+      "saturation_mean": 52.3
+    },
+    "outlines": {
+      "has_outlines_pct": 98.0,
+      "avg_thickness_px": 4.0,
+      "dominant_color_hex": "#65586a"
+    },
+    "lighting_and_palette": {
+      "shadows": {
+        "act1": "#2f2b40",
+        "act2": "#18162a",
+        "act3": "#1c1429"
+      },
+      "highlights": {
+        "act1": "#bba9ae",
+        "act2": "#ad9aa3",
+        "act3": "#d4bdb3"
+      }
+    },
+    "character_proportions": {
+      "head_to_body_ratio": "1:4.0",
+      "head_proportion_pct": 25.0,
+      "width_to_height_ratio": 0.64
+    },
+    "background_depth": {
+      "laplacian_variance": 744.9,
+      "depth_type": "Deep Focus (flat 2D)"
+    }
+  },
+  {
+    "index": 13,
+    "filename": "13_He_Could_Spot_Winning_Tickets_Just_by_Looking_DEe0iKH4KIw.mp4",
+    "duration": 63.27,
+    "total_frames": 1898,
+    "contact_sheets_count": 32,
+    "camera_movement": {
+      "avg_movement_px_per_frame": 1.63,
+      "pct_frames_moving": 53.9
+    },
+    "cuts_and_shots": {
+      "hard_cuts_count": 1,
+      "shots_count": 2,
+      "avg_shot_length_seconds": 31.63
+    },
+    "color_metrics": {
+      "brightness_mean": 52.9,
+      "contrast_mean": 25.4,
+      "saturation_mean": 45.7
+    },
+    "outlines": {
+      "has_outlines_pct": 100.0,
+      "avg_thickness_px": 4.0,
+      "dominant_color_hex": "#81645b"
+    },
+    "lighting_and_palette": {
+      "shadows": {
+        "act1": "#23181f",
+        "act2": "#1a1324",
+        "act3": "#2e1f2d"
+      },
+      "highlights": {
+        "act1": "#e4ba83",
+        "act2": "#cab4b3",
+        "act3": "#ead9ca"
+      }
+    },
+    "character_proportions": {
+      "head_to_body_ratio": "1:4.0",
+      "head_proportion_pct": 25.0,
+      "width_to_height_ratio": 0.7
+    },
+    "background_depth": {
+      "laplacian_variance": 2422.5,
+      "depth_type": "Deep Focus (flat 2D)"
+    }
+  },
+  {
+    "index": 14,
+    "filename": "14_What_the_Grave_Bell_Really_Meant_GM9UKnZ6JFw.mp4",
+    "duration": 59.5,
+    "total_frames": 1785,
+    "contact_sheets_count": 30,
+    "camera_movement": {
+      "avg_movement_px_per_frame": 2.18,
+      "pct_frames_moving": 57.4
+    },
+    "cuts_and_shots": {
+      "hard_cuts_count": 1,
+      "shots_count": 2,
+      "avg_shot_length_seconds": 29.75
+    },
+    "color_metrics": {
+      "brightness_mean": 60.1,
+      "contrast_mean": 22.8,
+      "saturation_mean": 53.0
+    },
+    "outlines": {
+      "has_outlines_pct": 99.9,
+      "avg_thickness_px": 4.0,
+      "dominant_color_hex": "#76616e"
+    },
+    "lighting_and_palette": {
+      "shadows": {
+        "act1": "#2b1c36",
+        "act2": "#2c1a37",
+        "act3": "#412432"
+      },
+      "highlights": {
+        "act1": "#baa0b7",
+        "act2": "#aa9dcb",
+        "act3": "#c0b3cd"
+      }
+    },
+    "character_proportions": {
+      "head_to_body_ratio": "1:4.0",
+      "head_proportion_pct": 25.0,
+      "width_to_height_ratio": 0.62
+    },
+    "background_depth": {
+      "laplacian_variance": 1072.5,
+      "depth_type": "Deep Focus (flat 2D)"
+    }
+  },
+  {
+    "index": 15,
+    "filename": "15_Why_Cashiers_Keep_Winning_The_Lottery_VKsamN3Fk4U.mp4",
+    "duration": 57.73,
+    "total_frames": 1732,
+    "contact_sheets_count": 29,
+    "camera_movement": {
+      "avg_movement_px_per_frame": 2.09,
+      "pct_frames_moving": 48.1
+    },
+    "cuts_and_shots": {
+      "hard_cuts_count": 14,
+      "shots_count": 15,
+      "avg_shot_length_seconds": 3.85
+    },
+    "color_metrics": {
+      "brightness_mean": 66.3,
+      "contrast_mean": 22.1,
+      "saturation_mean": 44.4
+    },
+    "outlines": {
+      "has_outlines_pct": 99.9,
+      "avg_thickness_px": 4.0,
+      "dominant_color_hex": "#7f7172"
+    },
+    "lighting_and_palette": {
+      "shadows": {
+        "act1": "#2b1e27",
+        "act2": "#363349",
+        "act3": "#372f43"
+      },
+      "highlights": {
+        "act1": "#e8beb2",
+        "act2": "#d7cfd9",
+        "act3": "#b8b3cd"
+      }
+    },
+    "character_proportions": {
+      "head_to_body_ratio": "1:4.0",
+      "head_proportion_pct": 25.0,
+      "width_to_height_ratio": 0.74
+    },
+    "background_depth": {
+      "laplacian_variance": 1136.0,
+      "depth_type": "Deep Focus (flat 2D)"
+    }
+  },
+  {
+    "index": 16,
+    "filename": "16_The_Job_Nobody_Wants_in_Japan_0m6G8pDtzNs.mp4",
+    "duration": 60.5,
+    "total_frames": 1815,
+    "contact_sheets_count": 31,
+    "camera_movement": {
+      "avg_movement_px_per_frame": 2.77,
+      "pct_frames_moving": 70.6
+    },
+    "cuts_and_shots": {
+      "hard_cuts_count": 15,
+      "shots_count": 16,
+      "avg_shot_length_seconds": 3.78
+    },
+    "color_metrics": {
+      "brightness_mean": 68.3,
+      "contrast_mean": 19.8,
+      "saturation_mean": 43.3
+    },
+    "outlines": {
+      "has_outlines_pct": 100.0,
+      "avg_thickness_px": 4.0,
+      "dominant_color_hex": "#70737a"
+    },
+    "lighting_and_palette": {
+      "shadows": {
+        "act1": "#3a3c47",
+        "act2": "#403847",
+        "act3": "#292d47"
+      },
+      "highlights": {
+        "act1": "#c8c5bc",
+        "act2": "#cfc7c6",
+        "act3": "#b4aabe"
+      }
+    },
+    "character_proportions": {
+      "head_to_body_ratio": "1:4.0",
+      "head_proportion_pct": 25.0,
+      "width_to_height_ratio": 0.72
+    },
+    "background_depth": {
+      "laplacian_variance": 990.7,
+      "depth_type": "Deep Focus (flat 2D)"
+    }
+  },
+  {
+    "index": 17,
+    "filename": "17_The_Burglar_Who_Only_Moved_Furniture_nzbkkEZFM8g.mp4",
+    "duration": 58.37,
+    "total_frames": 1751,
+    "contact_sheets_count": 30,
+    "camera_movement": {
+      "avg_movement_px_per_frame": 2.18,
+      "pct_frames_moving": 67.3
+    },
+    "cuts_and_shots": {
+      "hard_cuts_count": 6,
+      "shots_count": 7,
+      "avg_shot_length_seconds": 8.34
+    },
+    "color_metrics": {
+      "brightness_mean": 71.4,
+      "contrast_mean": 21.8,
+      "saturation_mean": 44.6
+    },
+    "outlines": {
+      "has_outlines_pct": 100.0,
+      "avg_thickness_px": 4.0,
+      "dominant_color_hex": "#918787"
+    },
+    "lighting_and_palette": {
+      "shadows": {
+        "act1": "#32394c",
+        "act2": "#2f274d",
+        "act3": "#45313b"
+      },
+      "highlights": {
+        "act1": "#dbcfc2",
+        "act2": "#ccc0c8",
+        "act3": "#e4d3cb"
+      }
+    },
+    "character_proportions": {
+      "head_to_body_ratio": "1:4.0",
+      "head_proportion_pct": 25.0,
+      "width_to_height_ratio": 0.7
+    },
+    "background_depth": {
+      "laplacian_variance": 1519.9,
+      "depth_type": "Deep Focus (flat 2D)"
+    }
+  },
+  {
+    "index": 18,
+    "filename": "18_The_Ancient_Jar_That_Warned_an_Empire_VS1Z_Q-Klt8.mp4",
+    "duration": 64.83,
+    "total_frames": 1945,
+    "contact_sheets_count": 33,
+    "camera_movement": {
+      "avg_movement_px_per_frame": 1.73,
+      "pct_frames_moving": 62.1
+    },
+    "cuts_and_shots": {
+      "hard_cuts_count": 0,
+      "shots_count": 1,
+      "avg_shot_length_seconds": 64.83
+    },
+    "color_metrics": {
+      "brightness_mean": 56.4,
+      "contrast_mean": 20.2,
+      "saturation_mean": 41.1
+    },
+    "outlines": {
+      "has_outlines_pct": 99.7,
+      "avg_thickness_px": 4.0,
+      "dominant_color_hex": "#856864"
+    },
+    "lighting_and_palette": {
+      "shadows": {
+        "act1": "#352531",
+        "act2": "#332435",
+        "act3": "#4e3b42"
+      },
+      "highlights": {
+        "act1": "#c5b2a1",
+        "act2": "#b6a4b3",
+        "act3": "#dbb497"
+      }
+    },
+    "character_proportions": {
+      "head_to_body_ratio": "1:4.0",
+      "head_proportion_pct": 25.0,
+      "width_to_height_ratio": 0.65
+    },
+    "background_depth": {
+      "laplacian_variance": 1378.6,
+      "depth_type": "Deep Focus (flat 2D)"
+    }
+  },
+  {
+    "index": 19,
+    "filename": "19_Levels_of_Pirate_Cannonballs_lnYLIWP2l-I.mp4",
+    "duration": 63.5,
+    "total_frames": 1905,
+    "contact_sheets_count": 32,
+    "camera_movement": {
+      "avg_movement_px_per_frame": 2.69,
+      "pct_frames_moving": 58.0
+    },
+    "cuts_and_shots": {
+      "hard_cuts_count": 15,
+      "shots_count": 16,
+      "avg_shot_length_seconds": 3.97
+    },
+    "color_metrics": {
+      "brightness_mean": 62.8,
+      "contrast_mean": 19.9,
+      "saturation_mean": 47.5
+    },
+    "outlines": {
+      "has_outlines_pct": 98.2,
+      "avg_thickness_px": 4.0,
+      "dominant_color_hex": "#987864"
+    },
+    "lighting_and_palette": {
+      "shadows": {
+        "act1": "#4b403c",
+        "act2": "#3b2b33",
+        "act3": "#3c343e"
+      },
+      "highlights": {
+        "act1": "#b4c9da",
+        "act2": "#d8a889",
+        "act3": "#c1b0ac"
+      }
+    },
+    "character_proportions": {
+      "head_to_body_ratio": "1:4.0",
+      "head_proportion_pct": 25.0,
+      "width_to_height_ratio": 0.73
+    },
+    "background_depth": {
+      "laplacian_variance": 980.5,
+      "depth_type": "Deep Focus (flat 2D)"
+    }
+  },
+  {
+    "index": 20,
+    "filename": "20_This_Knight_Found_the_Ultimate_Loophole_jpFJ8Z_F-qU.mp4",
+    "duration": 40.63,
+    "total_frames": 1219,
+    "contact_sheets_count": 21,
+    "camera_movement": {
+      "avg_movement_px_per_frame": 2.17,
+      "pct_frames_moving": 64.5
+    },
+    "cuts_and_shots": {
+      "hard_cuts_count": 2,
+      "shots_count": 3,
+      "avg_shot_length_seconds": 13.54
+    },
+    "color_metrics": {
+      "brightness_mean": 67.4,
+      "contrast_mean": 21.4,
+      "saturation_mean": 44.4
+    },
+    "outlines": {
+      "has_outlines_pct": 99.8,
+      "avg_thickness_px": 4.0,
+      "dominant_color_hex": "#977b60"
+    },
+    "lighting_and_palette": {
+      "shadows": {
+        "act1": "#433131",
+        "act2": "#433c32",
+        "act3": "#5a4136"
+      },
+      "highlights": {
+        "act1": "#b7cfe5",
+        "act2": "#cfcbc3",
+        "act3": "#e9d3af"
+      }
+    },
+    "character_proportions": {
+      "head_to_body_ratio": "1:4.0",
+      "head_proportion_pct": 25.0,
+      "width_to_height_ratio": 0.66
+    },
+    "background_depth": {
+      "laplacian_variance": 1357.3,
+      "depth_type": "Deep Focus (flat 2D)"
+    }
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "file": "shot_01.png",
+    "brightness": 54.01,
+    "saturation": 39.47,
+    "contrast": 23.92,
+    "edge_pct": 1.41,
+    "ink_hex": "#2f291f",
+    "brightness_ok": true,
+    "saturation_ok": true,
+    "contrast_ok": true
+  },
+  {
+    "file": "shot_02.png",
+    "brightness": 57.88,
+    "saturation": 34.84,
+    "contrast": 22.22,
+    "edge_pct": 1.75,
+    "ink_hex": "#28231f",
+    "brightness_ok": true,
+    "saturation_ok": false,
+    "contrast_ok": true
+  },
+  {
+    "file": "shot_03.png",
+    "brightness": 69.39,
+    "saturation": 34.5,
+    "contrast": 16.58,
+    "edge_pct": 1.58,
+    "ink_hex": "#24231f",
+    "brightness_ok": true,
+    "saturation_ok": false,
+    "contrast_ok": false
+  },
+  {
+    "file": "shot_04.png",
+    "brightness": 64.7,
+    "saturation": 42.73,
+    "contrast": 17.19,
+    "edge_pct": 1.4,
+    "ink_hex": "#2a2822",
+    "brightness_ok": true,
+    "saturation_ok": true,
+    "contrast_ok": true
+  },
+  {
+    "file": "shot_05.png",
+    "brightness": 67.01,
+    "saturation": 35.56,
+    "contrast": 14.33,
+    "edge_pct": 1.16,
+    "ink_hex": "#24231f",
+    "brightness_ok": true,
+    "saturation_ok": false,
+    "contrast_ok": false
+  },
+  {
+    "file": "shot_06.png",
+    "brightness": 64.22,
+    "saturation": 46.19,
+    "contrast": 12.41,
+    "edge_pct": 1.53,
+    "ink_hex": "#2d2620",
+    "brightness_ok": true,
+    "saturation_ok": true,
+    "contrast_ok": false
+  },
+  {
+    "file": "shot_07.png",
+    "brightness": 59.32,
+    "saturation": 26.46,
+    "contrast": 23.49,
+    "edge_pct": 2.24,
+    "ink_hex": "#24231f",
+    "brightness_ok": true,
+    "saturation_ok": false,
+    "contrast_ok": true
+  },
+  {
+    "file": "shot_08.png",
+    "brightness": 60.18,
+    "saturation": 36.13,
+    "contrast": 20.11,
+    "edge_pct": 0.8,
+    "ink_hex": "#21160f",
+    "brightness_ok": true,
+    "saturation_ok": true,
+    "contrast_ok": true
+  },
+  {
+    "file": "shot_09.png",
+    "brightness": 59.63,
+    "saturation": 33.49,
+    "contrast": 22.47,
+    "edge_pct": 1.6,
+    "ink_hex": "#251f12",
+    "brightness_ok": true,
+    "saturation_ok": false,
+    "contrast_ok": true
+  }
+]

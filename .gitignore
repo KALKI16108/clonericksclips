@@ -1,0 +1,24 @@
+# Node dependencies
+node_modules/
+**/node_modules/
+
+# Remotion & build outputs
+out/
+**/out/
+*.mp4
+
+# Extracted frame dataset (thousands of frames, gigabytes)
+build/frames/
+build/test.mp4
+
+# Heavy video references
+references/*.mp4
+references/mp4/
+
+# Large contact sheet sets
+analysis/contact_sheets/
+
+# OS / Editor artifacts
+.DS_Store
+Thumbs.db
+*.log
