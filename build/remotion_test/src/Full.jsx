@@ -150,6 +150,7 @@ function World({t, activeIdx}) {
     scene.fog = new THREE.Fog(shot.fog, 12, 50);
 
     for (const k of Object.keys(built)) {
+      if (built[k].update) built[k].update(t);
       const isCurrentShot = (k === shot.id);
       built[k].characters.forEach((c, idx) => {
         const animState = getCharacterAnimation(k, idx, t, isCurrentShot);

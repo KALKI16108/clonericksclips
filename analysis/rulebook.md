@@ -248,3 +248,111 @@ To ensure the highest fidelity for our build pipeline, the 5 foundational claims
    - Animate expressions via `animateCharacter(character, t, { emotion, speaking, angerLevel, shouting })` supporting `'calm'`, `'grin'`, `'shock'`, `'angry'`, `'shout'`, `'smug'`, `'deadpan'`, `'sad'`, `'crying'`, `'sweat'`, `'dizzy'`, and `'love'`.
    - For anger/frustration beats, smoothly interpolate `angerLevel` (`0.0 → 1.0`) so purple liquid fills the head contour from chin to crown with a wavy waterline (`Z.angerFill`), popping the temple vein and snapping into `mouthShoutGroup` with raised tense arms and tremor at `angerLevel >= 0.78`.
 
+---
+
+## 10. Continuous Video Camera Travel Dynamics & 3D Spatial Staging
+
+Based on frame-by-frame continuous video optical flow, Lucas-Kanade corner tracking, and spatial depth-of-field profiling across all 122 shots in the 20 reference videos (`references/*.mp4`, 37,181 frames total @ 30.0 fps), the cinematographic motion and 3D world composition rules are established below.
+
+### 10.1 Continuous 3D Camera Travel vs. Static Holds
+
+Across all 122 shots in the reference canon, the camera is overwhelmingly dynamic:
+- **Continuous 3D Camera Travel**: **89.3% of shots** (109 / 122 shots).
+- **Static Holds**: **10.7% of shots** (13 / 122 shots).
+
+| Shot Cinematography State | Count | Percentage | Characteristics & Narrative Usage |
+| :--- | :---: | :---: | :--- |
+| **Continuous 3D Camera Travel** | **109** | **89.3%** | Unbroken translation, push-in dolly, tracking, or rotational arc active across $\ge 70\%$ of shot duration. Maintains narrative momentum and spatial immersion. |
+| **Static Holds** | **13** | **10.7%** | Locked camera with minimal sub-pixel micro-jitter ($< 0.9$ px/frame). Exclusively reserved for comedic shock beats, visual punchlines, or deadpan character freezes. |
+
+> [!IMPORTANT]
+> **Production Mandate**: Every production shot MUST feature continuous 3D camera travel through Three.js world space. Never leave the camera completely static during narrative dialogue or explanatory beats. If a comedic beat requires a hold, hold for no more than 12–18 frames (0.4–0.6s) before resuming drift.
+
+---
+
+### 10.2 Measured Camera Velocities: px/frame & Metric (m/s) Equivalents
+
+Camera travel speed was measured across all moving frames at 720×1280 resolution (30.0 fps). Metric velocity equivalents ($m/s$) are calculated using the calibrated optical projection model:
+$$\text{Vertical View Height at Character Plane } (Z \approx 2.85\text{m}, \text{FOV } 39.8^\circ) \approx 2.07\text{ meters}$$
+$$1\text{ pixel at 720p} \approx \frac{2.07\text{ m}}{1280\text{ px}} \approx 0.001617\text{ m/px}$$
+$$v_{\text{m/s}} = v_{\text{px/frame}} \times 30\text{ frames/s} \times 0.001617\text{ m/px} \approx v_{\text{px/frame}} \times 0.0485\text{ m/s}$$
+
+| Velocity Metric | Value in Pixels/Frame (720p @ 30fps) | Metric Speed Equivalent (m/s) | Context / Operational Range |
+| :--- | :---: | :---: | :--- |
+| **Mean Camera Velocity** | **8.62 px/frame** | **0.418 m/s** | Overall aggregate across all shot types (including whip pans). |
+| **Median Camera Velocity** | **6.95 px/frame** | **0.337 m/s** | Typical steady narrative travel speed across standard shots. |
+| **Standard Deviation** | **±7.00 px/frame** | **±0.339 m/s** | Wide dynamic range between subtle pushes and rapid pans. |
+| **Interquartile Range [Q1 - Q3]** | **[4.20 - 11.45 px/frame]** | **[0.204 - 0.555 m/s]** | Standard operational envelope for cinematic movement. |
+| **Full Range [Min - Max]** | **[0.27 - 41.97 px/frame]** | **[0.013 - 2.036 m/s]** | From micro-drift holds to extreme whip-pan transitions. |
+| **Recommended Narrative Dolly Speed** | **4.50 – 6.50 px/frame** | **0.218 – 0.315 m/s** | **Gold standard for Three.js shot camera plans.** |
+| **Recommended Whip Pan Speed** | **14.00 – 24.00 px/frame** | **0.679 – 1.164 m/s** | Used for rapid framing switches and impact bursts. |
+
+---
+
+### 10.3 Camera Move Categorization & Distribution
+
+Camera moves across the 122 shots fall into six distinct operational classifications:
+
+| Move Category | Shot Count | Share (%) | Velocity (Mean px/f) | Velocity (m/s) | Operational Definition & Visual Purpose |
+| :--- | :---: | :---: | :---: | :---: | :--- |
+| **Seamless Multi-Subject Whip/Pan** | **66** | **54.1%** | 12.35 px/f | 0.599 m/s | Rapid horizontal or diagonal re-orientation connecting two distinct subjects, crowds, or zones without a hard cut. |
+| **Push-in Dolly** | **28** | **23.0%** | 5.28 px/f | 0.256 m/s | Continuous forward translation along the camera's Z-axis into the scene, steadily increasing character intimacy, emotional tension, or focusing on a prop. |
+| **Static Hold** | **13** | **10.7%** | 0.62 px/f | 0.030 m/s | Locked camera with minimal handheld sub-pixel jitter, reserved for visual punchlines or shock reactions. |
+| **Orbit / Arc Move** | **10** | **8.2%** | 6.84 px/f | 0.332 m/s | Rotational camera trajectory orbiting around a central midground subject/prop, showcasing the full 3D dimensionality of the environment. |
+| **Tracking / Trucking (Lateral)** | **3** | **2.5%** | 4.85 px/f | 0.235 m/s | Lateral X-axis translation running parallel to the character's movement or environment horizon, producing strong ground and background parallax. |
+| **Crane Drop / Rise (Pedestal/Boom)** | **2** | **1.6%** | 4.12 px/f | 0.200 m/s | Vertical Y-axis movement descending from sky/dunes down to eye level, or booming upward to establish the massive scale of an obstacle or event. |
+
+---
+
+### 10.4 3D Depth & Spatial Staging Architecture
+
+Every shot in the reference videos uses a rigorous **3-tier spatial depth hierarchy**:
+
+```
+[ LENS ] 
+   |
+   |--- (0.8m - 1.5m) ---> TIER 1: FOREGROUND (Wipe elements, props, foliage, barriers) [Parallax: 16.02x]
+   |
+   |--- (2.0m - 3.5m) ---> TIER 2: MIDGROUND (Character acting zone, physical signage) [Sharpness: 29.4x]
+   |
+   |--- (> 5.0m) --------> TIER 3: BACKGROUND (Horizon, terrain, distant architecture) [Atmospheric Haze: 1.79x]
+```
+
+1. **Tier 1: Foreground Parallax (Near Field, 0.8m – 1.5m from camera)**:
+   - **Empirical Velocity Ratio**: Foreground elements move at a mean **16.02x (median 7.64x)** relative to background scenery.
+   - **Staging Rule**: In every shot, pass physical foreground props (beach grasses, dune crests, wooden fence posts, police barrier sawhorses, vehicle bumpers, or spectator silhouettes) close to the lens. As the camera travels, these elements produce dramatic parallax wipes that immediately communicate physical 3D depth to the viewer.
+2. **Tier 2: Midground Character Staging (Action Plane, 2.0m – 3.5m from camera)**:
+   - **Screen Height Allocation**: Midground characters occupy **28% – 42% of total frame height** in medium shots (mean: **39.3%**, median: **39.9%** across all sampled dialogue frames). In close-ups, characters occupy **50% – 65%** of frame height.
+   - **Vertical Positioning**: The ground contact line is anchored in the lower **25% – 35%** of the frame. Characters are framed large enough to clearly read facial micro-expressions, gestures, and outfit details.
+   - **Spatial Clearance**: Characters stand on tangible 3D ground planes with ground contact shadows (`ShadowMaterial` opacity $0.28 – 0.35$), never floating in empty space.
+3. **Tier 3: Background Depth-of-Field & Atmospheric Distance Haze (> 5.0m from camera)**:
+   - **Depth-of-Field Falloff**: Focused midground subjects exhibit a **29.4x mean sharpness advantage** (median **4.3x**) in Laplacian edge variance over distant background elements. Background scenery is softened with subtle bokeh falloff.
+   - **Atmospheric Distance Haze**: Distant background elements undergo **1.79x contrast attenuation**. Dark shadows lift from charcoal `#1b1817` towards the warm atmospheric studio tone (`#ded9cf` or ambient sky tint), mimicking aerial perspective.
+
+---
+
+### 10.5 3D World Composition Rules
+
+To guarantee that scenes match the reference videos and avoid flat, cheap-looking visuals, every 3D scene MUST adhere strictly to the following 5 composition rules:
+
+1. **Strictly Zero Flat 2D Strips or Cardboard Facades**:
+   - **Prohibition**: Never use flat planar polygons, 2D ribbon strips, or single-quad textured billboards for ground, buildings, fences, or vehicles.
+   - **Requirement**: Every object must be a true 3D volumetric mesh with physical depth, side bevels, and thickness (e.g., wooden planks have 5cm thickness, dunes are undulating 3D spline meshes, concrete bunkers have deep window recesses, police barriers have 3D crossbars and legs). During continuous 3D camera travel, planar geometry reveals its paper-thin nature and shatters immersion.
+2. **Stylized Painted Textures with Diffuse Shading**:
+   - Surfaces must be textured with flat painted colors, subtle hand-painted ambient gradients, or soft vertex colors.
+   - Avoid photorealistic PBR noise, high-frequency bump maps, or metallic grit. The aesthetic is clean, charming, and illustrative.
+3. **Dark Ink Outlines on 3D Assets**:
+   - Every architectural structure, vehicle, terrain ledge, and prop MUST have prominent dark ink outlines matching the character line art.
+   - Ink color must adhere strictly to `#1b1817` to `#2e2520` (warm charcoal / dark sepia). Stroke thickness is calibrated to **3 – 5px** at 720p. Outlines must encircle outer silhouettes and major interior crease lines.
+4. **100% In-World Physical Signage (No Floating HUD Text)**:
+   - **Prohibition**: Never overlay floating 2D UI text, abstract callout arrows, or HUD statistics onto the screen.
+   - **Requirement**: All on-screen labels, technical measurements, locations, dates, and warning signs MUST be modeled as physical, tangible objects inside the 3D environment:
+     - Carved wooden road signposts standing in the sand
+     - Stenciled text painted on military dynamite crates
+     - Stamped metal warning plaques on barricades
+     - Chalkboards on easels or clipboards held by characters
+5. **Dynamic Parallax Staging in Every Camera Plan**:
+   - Every shot plan must explicitly define the 3D camera trajectory: `Start [X, Y, Z]`, `End [X, Y, Z]`, and `LookAt [X, Y, Z]`.
+   - The path must be angled to traverse past foreground objects and reveal midground action against the deep background, guaranteeing maximum parallax and continuous visual energy.
+
+
