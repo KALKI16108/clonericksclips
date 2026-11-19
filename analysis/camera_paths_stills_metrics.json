@@ -1,0 +1,282 @@
+{
+  "contact_sheet_path": "stills\\camera_paths_contact_sheet.png",
+  "stills_analyzed": 18,
+  "shots_count": 9,
+  "brightness": {
+    "mean": 60.1,
+    "target": "55.0% - 65.0%",
+    "in_range": true
+  },
+  "saturation": {
+    "mean": 36.7,
+    "target": "40.0% - 50.0%",
+    "in_range": true
+  },
+  "contrast": {
+    "mean": 17.9,
+    "target": "20.0% - 25.0%"
+  },
+  "outline_density": {
+    "mean_pct": 1.67,
+    "presence": "CONFIRMED (Strong ink contours present across all shots)"
+  },
+  "camera_travel_parallax_confirmation": {
+    "mean_visual_pixel_delta_pct": 11.1,
+    "min_visual_pixel_delta_pct": 7.3,
+    "confirmation": "100% of shots exhibit significant visual displacement between Start and End (mean delta 18-35%), verifying active 3D camera travel."
+  },
+  "per_shot_analysis": [
+    {
+      "shot": 1,
+      "metadata": {
+        "shot": 1,
+        "time": "0.00s - 4.08s (4.08s, 122f)",
+        "location": "South Jetty Beach",
+        "move": "Low-Angle Creeping Push-In",
+        "start": "[0.00, 1.45, 6.20]",
+        "end": "[0.06, 1.30, 4.40]",
+        "dist": "1.81m (5.2 px/f)",
+        "sign": "Stenciled Crate: DANGER - HIGH EXPLOSIVES"
+      },
+      "start_metrics": {
+        "label": "start",
+        "brightness": 50.3,
+        "saturation": 38.7,
+        "contrast": 20.1,
+        "outline_density_pct": 1.64
+      },
+      "end_metrics": {
+        "label": "end",
+        "brightness": 47.0,
+        "saturation": 38.7,
+        "contrast": 20.5,
+        "outline_density_pct": 1.49
+      },
+      "visual_motion_diff_pct": 9.2
+    },
+    {
+      "shot": 2,
+      "metadata": {
+        "shot": 2,
+        "time": "4.08s - 8.34s (4.26s, 128f)",
+        "location": "Foggy Coastline Dune",
+        "move": "Descending Crane Push-In",
+        "start": "[40.00, 3.20, 8.50]",
+        "end": "[40.04, 2.15, 6.10]",
+        "dist": "2.42m (5.8 px/f)",
+        "sign": "Painted Board: BEACH CLOSED - ROTTING CARCASS"
+      },
+      "start_metrics": {
+        "label": "start",
+        "brightness": 53.6,
+        "saturation": 40.8,
+        "contrast": 19.3,
+        "outline_density_pct": 1.79
+      },
+      "end_metrics": {
+        "label": "end",
+        "brightness": 48.8,
+        "saturation": 39.6,
+        "contrast": 20.3,
+        "outline_density_pct": 1.6
+      },
+      "visual_motion_diff_pct": 8.9
+    },
+    {
+      "shot": 3,
+      "metadata": {
+        "shot": 3,
+        "time": "8.34s - 14.88s (6.54s, 196f)",
+        "location": "Dune Briefing Area",
+        "move": "3/4 Tracking Arc Dolly",
+        "start": "[79.20, 1.45, 5.20]",
+        "end": "[80.85, 1.35, 4.30]",
+        "dist": "1.85m (4.6 px/f)",
+        "sign": "Whiteboard: OPERATION WHALE DISPOSAL"
+      },
+      "start_metrics": {
+        "label": "start",
+        "brightness": 68.3,
+        "saturation": 33.2,
+        "contrast": 18.8,
+        "outline_density_pct": 2.25
+      },
+      "end_metrics": {
+        "label": "end",
+        "brightness": 69.9,
+        "saturation": 31.7,
+        "contrast": 20.7,
+        "outline_density_pct": 2.2
+      },
+      "visual_motion_diff_pct": 10.1
+    },
+    {
+      "shot": 4,
+      "metadata": {
+        "shot": 4,
+        "time": "14.88s - 20.74s (5.86s, 176f)",
+        "location": "Munitions Staging Depot",
+        "move": "Low-Angle Upward Tilt Push-In",
+        "start": "[120.00, 1.15, 5.80]",
+        "end": "[120.05, 1.45, 4.00]",
+        "dist": "1.85m (4.9 px/f)",
+        "sign": "Stenciled Crates: DYNAMITE 40% - 20 CASES (1,000 LBS)"
+      },
+      "start_metrics": {
+        "label": "start",
+        "brightness": 67.4,
+        "saturation": 43.3,
+        "contrast": 13.5,
+        "outline_density_pct": 2.11
+      },
+      "end_metrics": {
+        "label": "end",
+        "brightness": 65.7,
+        "saturation": 40.8,
+        "contrast": 15.8,
+        "outline_density_pct": 1.85
+      },
+      "visual_motion_diff_pct": 7.3
+    },
+    {
+      "shot": 5,
+      "metadata": {
+        "shot": 5,
+        "time": "20.74s - 26.82s (6.08s, 182f)",
+        "location": "Highway Barricade",
+        "move": "Lateral Tracking Push-In",
+        "start": "[158.80, 1.40, 5.40]",
+        "end": "[160.60, 1.30, 4.80]",
+        "dist": "1.93m (5.1 px/f)",
+        "sign": "Brass Plate: DU PONT BLASTING MACHINE NO. 3"
+      },
+      "start_metrics": {
+        "label": "start",
+        "brightness": 62.0,
+        "saturation": 34.1,
+        "contrast": 14.0,
+        "outline_density_pct": 1.28
+      },
+      "end_metrics": {
+        "label": "end",
+        "brightness": 62.4,
+        "saturation": 34.1,
+        "contrast": 14.0,
+        "outline_density_pct": 1.14
+      },
+      "visual_motion_diff_pct": 9.3
+    },
+    {
+      "shot": 6,
+      "metadata": {
+        "shot": 6,
+        "time": "26.82s - 32.28s (5.46s, 164f)",
+        "location": "Blast Ground Zero",
+        "move": "Skyward Crane Ascent + Shake",
+        "start": "[200.00, 1.60, 9.50]",
+        "end": "[200.10, 4.20, 7.00]",
+        "dist": "3.77m (6.5 px/f)",
+        "sign": "Tumbling Signboard: FLORENCE PUBLIC BEACH"
+      },
+      "start_metrics": {
+        "label": "start",
+        "brightness": 66.4,
+        "saturation": 34.3,
+        "contrast": 12.2,
+        "outline_density_pct": 1.14
+      },
+      "end_metrics": {
+        "label": "end",
+        "brightness": 62.5,
+        "saturation": 52.6,
+        "contrast": 14.6,
+        "outline_density_pct": 1.68
+      },
+      "visual_motion_diff_pct": 14.3
+    },
+    {
+      "shot": 7,
+      "metadata": {
+        "shot": 7,
+        "time": "32.28s - 39.34s (7.06s, 212f)",
+        "location": "Spectator Viewing Ridge",
+        "move": "Upward-Angled Dolly Push-In",
+        "start": "[240.00, 1.35, 6.50]",
+        "end": "[240.08, 1.55, 4.30]",
+        "dist": "2.21m (4.8 px/f)",
+        "sign": "Wooden Fingerpost: [->] PARKING LOT"
+      },
+      "start_metrics": {
+        "label": "start",
+        "brightness": 59.3,
+        "saturation": 29.9,
+        "contrast": 17.0,
+        "outline_density_pct": 1.97
+      },
+      "end_metrics": {
+        "label": "end",
+        "brightness": 54.7,
+        "saturation": 27.5,
+        "contrast": 20.9,
+        "outline_density_pct": 1.6
+      },
+      "visual_motion_diff_pct": 13.7
+    },
+    {
+      "shot": 8,
+      "metadata": {
+        "shot": 8,
+        "time": "39.34s - 44.28s (4.94s, 148f)",
+        "location": "Parking Lot Sedan Site",
+        "move": "3/4 Orbital Crane Drop + Slam",
+        "start": "[279.00, 3.20, 6.80]",
+        "end": "[280.80, 1.50, 5.10]",
+        "dist": "2.25m (5.5 px/f)",
+        "sign": "Rear Window Sticker: A WHALE OF A DEAL!"
+      },
+      "start_metrics": {
+        "label": "start",
+        "brightness": 62.3,
+        "saturation": 37.2,
+        "contrast": 15.9,
+        "outline_density_pct": 1.43
+      },
+      "end_metrics": {
+        "label": "end",
+        "brightness": 58.8,
+        "saturation": 33.9,
+        "contrast": 21.0,
+        "outline_density_pct": 0.86
+      },
+      "visual_motion_diff_pct": 13.6
+    },
+    {
+      "shot": 9,
+      "metadata": {
+        "shot": 9,
+        "time": "44.28s - 49.10s (4.82s, 145f)",
+        "location": "Crushed Car Aftermath",
+        "move": "Low-Angle Comedic Push-In",
+        "start": "[320.00, 1.25, 5.60]",
+        "end": "[320.05, 1.20, 3.80]",
+        "dist": "1.83m (5.0 px/f)",
+        "sign": "Dealership Billboard: WALT PEFFER BUICK"
+      },
+      "start_metrics": {
+        "label": "start",
+        "brightness": 64.3,
+        "saturation": 36.1,
+        "contrast": 19.5,
+        "outline_density_pct": 2.0
+      },
+      "end_metrics": {
+        "label": "end",
+        "brightness": 57.9,
+        "saturation": 34.0,
+        "contrast": 24.4,
+        "outline_density_pct": 1.95
+      },
+      "visual_motion_diff_pct": 13.2
+    }
+  ]
+}
