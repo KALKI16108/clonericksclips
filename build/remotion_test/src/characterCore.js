@@ -92,11 +92,11 @@ export function createSurfaceMat(color, { polishMode = 'plastic', opacity = 1 } 
   if (polishMode === 'plastic') {
     return new THREE.MeshPhysicalMaterial({
       color,
-      roughness: 0.48,
+      roughness: 0.52,
       metalness: 0.0,
-      clearcoat: 0.42,
-      clearcoatRoughness: 0.36,
-      reflectivity: 0.45,
+      clearcoat: 0.36,
+      clearcoatRoughness: 0.46,
+      reflectivity: 0.35,
       side: THREE.DoubleSide,
       transparent: opacity < 1,
       opacity,
@@ -115,6 +115,7 @@ export function createSurfaceMat(color, { polishMode = 'plastic', opacity = 1 } 
     polygonOffsetFactor: -1,
   });
 }
+export const satinVinylMat = createSurfaceMat;
 
 export const inkMat = (color = INK, opacity = 1) =>
   new THREE.MeshBasicMaterial({
@@ -267,16 +268,20 @@ function createOverlayTexture(mode) {
   const ctx = canvas.getContext('2d');
 
   if (mode === 'plastic') {
-    const diag = ctx.createLinearGradient(8, 6, 110, 110);
-    diag.addColorStop(0.0, 'rgba(255, 252, 245, 0.22)');
-    diag.addColorStop(0.38, 'rgba(255, 252, 245, 0.06)');
+    // Gentle diagonal studio wash from top-left
+    const diag = ctx.createLinearGradient(0, 0, 128, 128);
+    diag.addColorStop(0.0, 'rgba(255, 252, 245, 0.16)');
+    diag.addColorStop(0.40, 'rgba(255, 252, 245, 0.05)');
     diag.addColorStop(1.0, 'rgba(255, 252, 245, 0.0)');
     ctx.fillStyle = diag;
     ctx.fillRect(0, 0, 128, 128);
 
-    const spec = ctx.createRadialGradient(36, 30, 4, 42, 36, 46);
-    spec.addColorStop(0.0, 'rgba(255, 253, 248, 0.26)');
-    spec.addColorStop(0.55, 'rgba(255, 253, 248, 0.07)');
+    // Broad, softly feathered top-left studio highlight (0.14-0.20 max opacity, wide radius, smooth falloff)
+    // Completely replaces any tight/small specular circle so it never renders as a pinpoint white dot
+    const spec = ctx.createRadialGradient(32, 28, 0, 48, 44, 78);
+    spec.addColorStop(0.0, 'rgba(255, 253, 248, 0.18)');
+    spec.addColorStop(0.35, 'rgba(255, 253, 248, 0.12)');
+    spec.addColorStop(0.70, 'rgba(255, 253, 248, 0.04)');
     spec.addColorStop(1.0, 'rgba(255, 253, 248, 0.0)');
     ctx.fillStyle = spec;
     ctx.fillRect(0, 0, 128, 128);
@@ -294,6 +299,7 @@ function createOverlayTexture(mode) {
   tex.colorSpace = THREE.SRGBColorSpace;
   return tex;
 }
+export const studioSheenTexture = createOverlayTexture;
 
 export function attachSurfaceOverlay(pts, z, polishMode) {
   if (!polishMode || polishMode === 'raw') return null;
@@ -363,12 +369,12 @@ export function buildOutfit(torsoGroup, {
       strapColor,
       { inkBand: 0.006, z: dz + 0.001, polishMode }
     );
-    const { group: knot } = createCutoutPart(ovalPts(0.022, 0.018, seed + 15, 20), accentColor, {
-      inkBand: 0.006,
+    const { group: knot } = createCutoutPart(ovalPts(0.018, 0.015, seed + 15, 20), strapColor, {
+      inkBand: 0.005,
       z: dz + 0.003,
       polishMode,
     });
-    knot.position.set(0.025, torsoH - 0.075, dz + 0.003);
+    knot.position.set(-0.015, torsoH - 0.08, dz + 0.003);
     torsoGroup.add(sash, knot);
   } else if (style === 'samuraiArmor') {
     for (let row = 0; row < 4; row++) {
@@ -1376,7 +1382,7 @@ export function animateCharacter(
     }
   }
 
-  const blink = !isShouting && emotion !== 'deadpan' && t % 3.4 > 3.28;
+  const blink = !isShouting && emotion !== 'deadpan' && (t % 3.2 > 3.06);
   const sX = isShouting ? 1.28 : eyeScaleX;
   const sY = isShouting ? 1.28 : blink ? 0.12 : eyeScaleY;
   rig.eyeL.scale.set(sX, sY, 1);
@@ -1396,26 +1402,38 @@ export function animateCharacter(
     fx.mouthWavy.visible = true;
   } else {
     rig.mouthShoutGroup.visible = false;
-    const talkOpen = forceOpenMouth || (speaking && Math.sin(t * 22) > 0);
+    const talkCycle = Math.sin(t * 22);
+    const talkOpen = forceOpenMouth || (speaking && talkCycle > -0.2);
     rig.mouthClosed.visible = !talkOpen;
     rig.mouthOpenGroup.visible = talkOpen;
+    if (talkOpen && rig.mouthOpenGroup) {
+      const openAmount = speaking ? (0.75 + Math.abs(talkCycle) * 0.45) : 1.0;
+      rig.mouthOpenGroup.scale.set(1, openAmount, 1);
+    }
   }
 
   const shakeX = isShouting ? Math.sin(t * 58) * 0.014 : 0;
   const shakeZ = isShouting ? Math.cos(t * 46) * 0.045 : 0;
+  const idleBreathing = Math.sin(t * 3.0) * 0.006;
+  const idleTilt = Math.sin(t * 1.5) * 0.012;
+
   rig.body.position.x = shakeX;
-  rig.body.position.y =
-    Math.sin(t * 3) * 0.005 + (isShouting ? Math.abs(Math.sin(t * 28)) * 0.012 : 0);
-  rig.headGroup.rotation.z = Math.sin(t * 1.8) * 0.025 + shakeZ + headTiltExtra;
+  rig.body.position.y = idleBreathing + (isShouting ? Math.abs(Math.sin(t * 28)) * 0.012 : 0);
+  rig.body.rotation.z = idleTilt;
+  rig.headGroup.rotation.z = Math.sin(t * 1.8) * 0.025 + Math.cos(t * 0.9) * 0.015 + shakeZ + headTiltExtra;
 
   if (isShouting) {
     rig.armL.rotation.z = -0.45 + Math.sin(t * 28) * 0.12;
     rig.armR.rotation.z = 0.45 - Math.sin(t * 28) * 0.12;
   } else if (emotion === 'crying' || emotion === 'sad') {
-    rig.armL.rotation.z = 0.14;
-    rig.armR.rotation.z = -0.14;
+    rig.armL.rotation.z = 0.14 + Math.sin(t * 2) * 0.02;
+    rig.armR.rotation.z = -0.14 - Math.sin(t * 2) * 0.02;
   } else {
-    rig.armL.rotation.z = speaking ? Math.sin(t * 6) * 0.16 : 0;
-    rig.armR.rotation.z = speaking ? -Math.sin(t * 6) * 0.14 : 0;
+    const idleL = Math.sin(t * 2.2) * 0.05 + 0.03;
+    const idleR = -Math.sin(t * 2.2 + 0.4) * 0.05 - 0.03;
+    const speakL = Math.sin(t * 6.5) * 0.18 + 0.12;
+    const speakR = -Math.sin(t * 6.5 + 0.5) * 0.16 - 0.10;
+    rig.armL.rotation.z = speaking ? speakL : idleL;
+    rig.armR.rotation.z = speaking ? speakR : idleR;
   }
 }

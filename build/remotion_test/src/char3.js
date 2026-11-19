@@ -78,8 +78,19 @@ export function makeCharacter({
   return char;
 }
 
-export function animateCharacter(root, t, camPos, options = {}) {
+export function animateCharacter(root, t, arg3, arg4) {
   if (!root) return;
+
+  let camPos = null;
+  let options = {};
+
+  if (arg3 && (arg3.isVector3 || Array.isArray(arg3) || typeof arg3.x === 'number')) {
+    camPos = arg3.isVector3 ? arg3 : new THREE.Vector3(arg3[0] ?? arg3.x, arg3[1] ?? arg3.y, arg3[2] ?? arg3.z);
+    options = arg4 || {};
+  } else if (arg3 && typeof arg3 === 'object') {
+    options = arg3;
+    camPos = arg4 && arg4.isVector3 ? arg4 : null;
+  }
 
   const emotion = options.emotion || root.userData?.emotion || 'calm';
   const speaking = options.speaking ?? false;

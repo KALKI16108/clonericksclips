@@ -26,7 +26,58 @@ The following directories were created:
 - `audio/` - Voiceovers, dialogue tracks, Foley, sound effects, and musical score.
 - `build/` - Project working files, extracted frames at 30 fps (`build/frames/`), intermediate render passes.
 - `stills/` - Keyframes, rendered stills, concept art, and visual development drafts (`stills/ref_samples/`).
-- `output/` - Final export renders, encoded video deliverables, and master cuts.
+- `output/` - Final export renders, encoded video deliverables, and master cuts (`output/preview.mp4`).
+
+---
+
+### Step 9: Video Rendering & Fast Local Pipeline
+- **Hardware Profile Verified**:
+  - OS: Windows 11 x64
+  - CPU: AMD Ryzen 5 7520U (4C / 8T)
+  - GPU: AMD Radeon(TM) Graphics (Integrated RDNA2, Driver `32.0.21045.16010`)
+  - RAM: 7.24 GB LPDDR5
+  - WebGL / Chrome: Hardware accelerated via ANGLE backend.
+- **Fast Preview Pipeline & Scripts**:
+  - Added `exploding-whale-fast` composition to `src/Root.jsx` (`540x960`, lightweight shadow maps, bypass heavy depth-of-field post-processing).
+  - Built unified rendering script `build/remotion_test/scripts/render.mjs` and interactive root runner `render.bat` supporting:
+    1. Fast Preview (`preview`)
+    2. Full Production 720p (`full`)
+    3. Modular Per-Shot Rendering (`shots` / `shot <n>`)
+    4. 1080x1920 Lanczos Upscaling (`scale1080`)
+    5. GPU vs Software Benchmark (`benchmark`)
+- **Render Results**:
+  - Successfully rendered all 1,473 frames of the 9-shot film in ~5.5 minutes.
+  - Video stream: H.264, 540x960 @ 30.0 fps.
+  - Audio stream: AAC, 24 kHz mono multiplexed with `public/voiceover.wav`.
+  - Master deliverable: `output/preview.mp4` (6.39 MB, exactly 49.10 seconds duration).
+
+### Step 10: Satin-Vinyl Polish Tuning (White Dot Fix)
+- **Overlay Texture Update (`createOverlayTexture` / `studioSheenTexture`)**:
+  - Replaced tight/pinpoint circular specular reflection (`r = 4`) with a broad, feathered top-left studio highlight (`max opacity = 0.18`, outer radius = 78 px) for a smooth, gentle studio gradient.
+- **Physical Material Tuning (`createSurfaceMat` / `satinVinylMat`)**:
+  - Set `roughness: 0.52`, `clearcoat: 0.36`, `clearcoatRoughness: 0.46`, and `reflectivity: 0.35` on `MeshPhysicalMaterial` for `polishMode === 'plastic'`.
+- **Robe Sash Knot Correction**:
+  - Standardized sash knot color to `strapColor` instead of high-contrast white.
+- **Verification**:
+  - Rendered updated still [character_satin_sheen.png](file:///C:/Users/dasha/Downloads/ko/stills/character_satin_sheen.png) and zoomed crop [character_satin_zoom.png](file:///C:/Users/dasha/Downloads/ko/stills/character_satin_zoom.png).
+  - Confirmed the pinpoint white dot is completely eliminated and replaced by a soft satin-vinyl finish.
+
+### Step 11: Continuous Per-Frame Animation & Dynamic Expression Loop
+- **Per-Frame Animation Dispatch (`Full.jsx` & `char3.js`)**:
+  - Configured `animateCharacter(character, t, camera.position, { emotion, speaking, angerLevel, shouting })` to execute on every single frame tick where `t = frame / fps`.
+  - Upgraded `char3.js` to polymorphically accept both `(root, t, options)` and `(root, t, camPos, options)` signatures.
+- **Dynamic Dialogue, Lip Sync & Articulation (`characterCore.js`)**:
+  - Wired speech cadence to `talkCycle = Math.sin(t * 22)` with mouth opening/closing and dynamic vertical jaw scaling `0.75 + Math.abs(talkCycle) * 0.45`.
+  - Added continuous idle motion: subtle breathing bob (`Math.sin(t * 3.0) * 0.006`), spine tilt sway, natural periodic blinking (`t % 3.2 > 3.06`), head rotation sway, and resting arm breathing sway (`Math.sin(t * 2.2) * 0.05`).
+- **Story-Driven Expression & Anger Schedules**:
+  - Mapped voiceover speech intervals and dramatic beats across all 9 shots in `getCharacterAnimation(shotId, charIndex, t, isCurrentShot)`.
+  - Shot 4 features the full anger ramp: sweat drop -> smooth liquid purple face fill -> temple vein pop -> shout mouth snap with tense shaking arms.
+- **Verification Across Keyframes**:
+  - Scrubbed and rendered stills across frames 0, 15, 45, 90, 120 ([anim_strip_0_15_45_90_120.png](file:///C:/Users/dasha/Downloads/ko/stills/anim_strip_0_15_45_90_120.png)) confirming frame-to-frame mouth opening, closing, and gesturing.
+  - Rendered Shot 4 anger progression across frames 455, 500, 540 ([shot4_anger_strip_centered.png](file:///C:/Users/dasha/Downloads/ko/stills/shot4_anger_strip_centered.png)) verifying the liquid purple face fill and shout snap.
+
+
+
 
 ---
 
