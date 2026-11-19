@@ -4,6 +4,7 @@ import {Full} from './Full.jsx';
 import {CharacterShowcase} from './CharacterShowcase.jsx';
 import {CustomCharacterShowcase} from './CustomCharacterShowcase.jsx';
 import {KitchenScene} from './KitchenScene.jsx';
+import {EnvironmentShowcase} from './EnvironmentShowcase.jsx';
 import {COMP_ID, FPS, WIDTH, HEIGHT, DURATION_S} from './story.js';
 
 export const Root = () => (
@@ -35,6 +36,14 @@ export const Root = () => (
     <Composition
       id="kitchen-scene"
       component={KitchenScene}
+      durationInFrames={30}
+      fps={30}
+      width={720}
+      height={1280}
+    />
+    <Composition
+      id="environment-showcase"
+      component={EnvironmentShowcase}
       durationInFrames={30}
       fps={30}
       width={720}

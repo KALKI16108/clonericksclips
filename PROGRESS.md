@@ -220,3 +220,67 @@ The following directories were created:
   - All stills pass rulebook checks: zero geometry collisions, zero face occlusions, ink color nadir `#21160f`–`#2f291f`, and brightness squarely in the target window (54.0%–69.4%).
   - Hard gate maintained: Video rendering is paused awaiting user review.
 
+---
+
+### Step 18: Reference Frame Recreation & Visual QA (Video 17 Frame 450)
+- **Goal**: Build a 1:1 match of the kitchen reference frame (Video 17 Frame 450: Dad calling police on a wall-mounted rotary telephone while holding a coffee mug).
+- **Environment & Prop Construction**:
+  - *Floor*: High-resolution procedural teal/cream checkerboard tiles with dark grout lines.
+  - *Walls & Backsplash*: Cream plaster walls with a gentle gradient, white subway tile backsplash, and a wall-mounted autumn pumpkin calendar.
+  - *Props*: Detailed 3D props with discrete parts—two-tone retro refrigerator, kitchen counter with stainless double sink, gooseneck faucet, carved pumpkin, bread loaf, and a wall phone with rotary dial, handset, and coiled spring cord.
+  - *Character Rig*: Custom Dad character with brown hair cap and highlight, round glasses with dark frames, subtle pink cheek blush, blue sweat drop, striped green shirt, and posed stick arms holding the handset and mug.
+  - *Lighting*: Soft warm sunlight patch streaming through the window onto the checkerboard floor (`#ffe58a` at 0.38 opacity), allowing the floor pattern to remain visible through the beam.
+- **Verification Stills Rendered**:
+  - Saved full side-by-side comparison to [`stills/side_by_side_comparison.png`](file:///C:/Users/dasha/Downloads/ko/stills/side_by_side_comparison.png).
+  - Saved zoomed character detail crop to [`stills/character_crop_comparison.png`](file:///C:/Users/dasha/Downloads/ko/stills/character_crop_comparison.png).
+
+---
+
+### Step 19: Complete 2.5D Character Architecture & Emotion System (`characterCore.js`)
+- **Rulebook Update**: Appended Section 9 (*Character Architecture, Studio Lighting & Emotion Rig*) to [`analysis/rulebook.md`](file:///C:/Users/dasha/Downloads/ko/analysis/rulebook.md).
+- **Architecture Upgrades in `src/characterCore.js`**:
+  - *Studio Stage*: Implemented `setupStudioStage(scene, renderer, camera)` establishing the `#ded9cf` backdrop, `PCFSoftShadowMap` upper-left directional key light (`#fff8eb`, 1.35 intensity at $-26^\circ$), ground `ShadowMaterial(opacity: 0.16)`, and $32^\circ$ FOV camera framing (`[0, 1.02, 2.85]` looking at `[0, 0.94, 0]`).
+  - *Outlines & Z-Stack*: Eliminated random outline jitter; implemented outward-normal Catmull-Rom splines (`offsetSmoothLoop`) in unlit `#1b1817` (`MeshBasicMaterial`) with strict 14-layer Z-stacking from shadow ($Z = 0.002$) to headgear ($Z = 0.060$).
+  - *Surface Polish*: Decoupled satin-vinyl `MeshPhysicalMaterial` (`polishMode: 'plastic'`) with top-left sheen overlay.
+  - *Modular Builders*: Provided preset-free modular `buildCharacter()` with built-in styles (`scholarRobe`, `samuraiArmor`, `trenchCoat`, `hoodie`, `scholarBun`, `topknot`, `kasaHat`, `kabutoHelmet`, `oniHorns`) and extensible callbacks (`buildClothes`, `buildHairAndHat`, `buildProp`).
+  - *12 Comic Emotions & Anger Shout*: Added animation rig supporting `'calm'`, `'grin'`, `'shock'`, `'angry'`, `'shout'`, `'smug'`, `'deadpan'`, `'sad'`, `'crying'`, `'sweat'`, `'dizzy'`, and `'love'`. Animated rising-purple liquid face-fill with wavy waterline (`Z.angerFill`), popping temple vein, shout mouth snap, and raised tense arm tremor at `angerLevel >= 0.78`.
+- **Project Refactoring**:
+  - Updated [`src/characterFactory.js`](file:///C:/Users/dasha/Downloads/ko/build/remotion_test/src/characterFactory.js) to re-export all `characterCore.js` APIs with legacy compatibility.
+  - Upgraded [`src/characterGenerator.js`](file:///C:/Users/dasha/Downloads/ko/build/remotion_test/src/characterGenerator.js) to map dynamic text prompts to `characterCore.js` styles.
+  - Wrapped [`src/char3.js`](file:///C:/Users/dasha/Downloads/ko/build/remotion_test/src/char3.js) around `buildCharacter()` and `animateCharacter()`.
+  - Built and verified studio showcase in [`src/CharacterShowcase.jsx`](file:///C:/Users/dasha/Downloads/ko/build/remotion_test/src/CharacterShowcase.jsx) and unified [`src/CustomCharacterShowcase.jsx`](file:///C:/Users/dasha/Downloads/ko/build/remotion_test/src/CustomCharacterShowcase.jsx).
+- **Stills Verified**:
+  - Rendered [`stills/character_core_showcase.png`](file:///C:/Users/dasha/Downloads/ko/stills/character_core_showcase.png) (Scholar Hero speaking with grin + Samurai Anger shouting with purple face-fill).
+  - Rendered [`stills/custom_character_core_showcase.png`](file:///C:/Users/dasha/Downloads/ko/stills/custom_character_core_showcase.png) matching the canonical character core showcase 1:1.
+
+---
+
+### Step 20: Batch 1 Environment System (`environmentCore.js`)
+- **Goal**: Implement Batch 1 of our procedural 3D environment system (Realistic 3D Trees, 3D Cobblestone Wall, and 3D Road) in `build/remotion_test/src/environmentCore.js`.
+- **Core Components Implemented**:
+  1. *3D Trees (`buildRealisticTree3D`)*:
+     - Tapered trunk with 4 organic root buttresses flared at the base into the ground at $Y = 0$.
+     - 4 secondary branch limbs emerging from trunk at natural upward/outward angles ($38^\circ - 52^\circ$).
+     - Voluminous, layered 3D foliage canopies built from perturbed vertex-displaced icosahedrons and spheres (no flat cards or planes).
+     - Procedural canvas textures for vertical bark grain/knots (`roughness: 0.90`) and mottled leaf clumps (`roughness: 0.72`).
+     - Fixed limb attachment pivots at the trunk junction to ensure swaying foliage never detaches.
+     - Deterministic breeze sway in `animateEnvironment(envGroup, t)` driven by $t$ in seconds.
+  2. *3D Cobblestone Wall (`buildCobblestoneWall3D`)*:
+     - Recessed dark mortar backing bed (`#3a3532`).
+     - Staggered courses of individually varied 3D stone blocks with randomized widths, depth offsets ($\pm 0.014\text{m}$), and pitch/yaw/roll micro-tilts ($\pm 0.035\text{ rad}$) to catch directional sunlight highlights and cast micro-shadows.
+     - Continuous beveled top coping cap with a center peaked ridge.
+  3. *3D Road (`buildRoad3D`)*:
+     - Road surface sits flush at $Y = 0.0$ to guarantee zero Z-fighting with the character's feet and contact shadow ($Y = 0.002$).
+     - Raised 3D concrete curbs ($Y = 0.05\text{m}$, width $0.18\text{m}$) along left and right borders with beveled inner rims.
+     - Road markings use `polygonOffset` (factor $-2$, units $-2$) with an open clearance around the $[0, 0, 0]$ character footing zone.
+     - Configurable styles implemented: `'normal'` (aggregate asphalt with dashed centerline), `'cobblestone'` (3D sett pavers with mortar joints), and `'modern'` (dark smooth asphalt with solid white shoulder lines and yellow center dashes).
+  4. *Atmospheric Lighting & Style Separation (`setupEnvironmentStage`)*:
+     - Directional sun key light (`#fff4dc`, 1.45 intensity) with enabled `THREE.PCFSoftShadowMap` soft shadows, hemisphere ambient light, and `THREE.FogExp2` distance haze.
+     - Strict aesthetic separation enforced: **zero `#1b1817` ink outlines on environment meshes**, preserving clear contrast between the painterly 3D environment and 2.5D character cutouts.
+- **Preview & Verification**:
+  - Created [`src/EnvironmentShowcase.jsx`](file:///C:/Users/dasha/Downloads/ko/build/remotion_test/src/EnvironmentShowcase.jsx) staging the road, cobblestone wall, multiple trees, and character at $[0, 0, 0]$.
+  - Registered `environment-showcase` composition in [`src/Root.jsx`](file:///C:/Users/dasha/Downloads/ko/build/remotion_test/src/Root.jsx).
+  - Rendered still frame at Frame 15 to [`stills/environment_batch1_showcase.png`](file:///C:/Users/dasha/Downloads/ko/stills/environment_batch1_showcase.png).
+  - Visually inspected: verified complete visibility of tree trunks, root flares, secondary limbs, lush foliage canopies, cobblestone wall facets and coping, asphalt road with curbs, and level character footing with soft PCF shadows and zero Z-fighting.
+
+
